@@ -10,6 +10,12 @@ a{
 a:hover, a:active, a:focus{
     color: #F7861A;
 }
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #F7861A;
+    font-size: 18px !important;
+}
 
 /* Navbar */
 #navbar{
@@ -38,4 +44,18 @@ a:hover, a:active, a:focus{
 }
 .nav-links ul li a span{
     color: #F7861A;
+}
+
+/* Home (landing page) */
+#home{
+    height: 100vh;
+    background-color: #1D1C36;
+    position: relative;
+}
+#home .container-fluid{
+    margin: 0;
+    padding: 250px 200px;
+}
+#home h1{
+    font-weight: 300;
 }
