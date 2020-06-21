@@ -23,8 +23,6 @@ h2{
 }
 p{
     font-family: 'Roboto', sans-serif;
-    font-size: 18px !important;
-    color: #A9A9C9;
 }
 
 /* Navbar */
@@ -85,6 +83,8 @@ p{
     width: 450px;
     margin: 45px 0;
     line-height: 23px;
+    font-size: 18px !important;
+    color: #A9A9C9;
 }
 #resume-btn{
     height: 50px;
@@ -116,7 +116,7 @@ p{
     color: white;
     font-size: 24px;
 }
-.vertical-line{
+#socials-bar .vertical-line{
     border-left: 2px solid white;
     height: 132px;
     position: relative;
@@ -127,12 +127,12 @@ p{
 
 /* About Me */
 #about{
-    height: 100vh;
+    height: auto;
     background-color: white;
 }
 #about .container{
     width: 100%;
-    padding: 250px 0 0 50px;
+    padding: 250px 50px 200px;
 }
 #about .container h1{
     position: relative;
@@ -144,5 +144,19 @@ p{
     position: absolute;
     color: #DFDFE3;
     left: 230px;
-    top: 960px;
+    top: 945px;
+}
+#about .container p{
+    position: relative;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 24px;
+    padding-top: 60px;
+    width: 800px;
+}
+#about .vertical-line{
+    border-left: 2px solid #1D1C36;
+    height: 210px;
+    position: absolute;
+    left: 91px;
 }
