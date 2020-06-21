@@ -16,6 +16,11 @@ h1{
     color: #F7861A;
     font-size: 18px !important;
 }
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700 !important;
+    font-size: 288px !important;
+}
 p{
     font-family: 'Roboto', sans-serif;
     font-size: 18px !important;
@@ -124,4 +129,20 @@ p{
 #about{
     height: 100vh;
     background-color: white;
+}
+#about .container{
+    width: 100%;
+    padding: 250px 0 0 50px;
+}
+#about .container h1{
+    position: relative;
+    z-index: 1;
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+.big-number-left{
+    position: absolute;
+    color: #DFDFE3;
+    left: 230px;
+    top: 960px;
 }
