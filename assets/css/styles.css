@@ -16,6 +16,11 @@ h1{
     color: #F7861A;
     font-size: 18px !important;
 }
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px !important;
+    color: #A9A9C9;
+}
 
 /* Navbar */
 #navbar{
@@ -35,6 +40,7 @@ h1{
     margin: 0;
     padding: 0;
     font-size: 18px;
+    font-family: 'Roboto', sans-serif;
 }
 .nav-links ul li a{
     padding: 0 12px;
@@ -52,10 +58,36 @@ h1{
     background-color: #1D1C36;
     position: relative;
 }
-#home .container-fluid{
-    margin: 0;
-    padding: 250px 200px;
+#home .container{
+    width: 100%;
+    padding: 250px 0 0 50px;
 }
 #home h1{
     font-weight: 300;
+}
+#home-name{
+    font-size: 64px !important;
+    font-weight: 400 !important;
+    color: white;
+}
+#home-description{
+    font-size: 56px !important;
+    font-weight: 400 !important;
+    color: #C3C2E1;
+}
+#home-blurb{
+    font-size: 18px;
+    width: 450px;
+    margin: 45px 0;
+    line-height: 23px;
+}
+#resume-btn{
+    height: 50px;
+    width: 125px;
+    border-radius: 5px;
+    border: 2px solid #F7861A;
+    color: #F7861A;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background-color: transparent;
 }
