@@ -24,6 +24,11 @@ h2{
     font-weight: 700 !important;
     font-size: 288px !important;
 }
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400 !important;
+    font-size: 48px !important;
+}
 p{
     font-family: 'Roboto', sans-serif;
 }
@@ -39,6 +44,25 @@ p{
     -moz-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
+}
+
+.big-number-left{
+    position: relative;
+    margin: -130px 0 0 30px;
+    width: fit-content;
+}
+.big-number-right{
+    position: relative;
+    margin: -130px 0 0 730px;
+    width: fit-content;
+}
+
+.emblem{
+    position: relative;
+    left: 50%;
+    color: white;
+    font-size: 32px;
+    top: 330px;
 }
 
 /* Navbar */
@@ -84,6 +108,7 @@ p{
 #topBtn{
     color: #F7861A;
     font-size: 36px;
+    animation: bounce 2s infinite;
 }
 
 /* Home (landing page) */
@@ -171,11 +196,8 @@ p{
     font-weight: 200;
     letter-spacing: 5px;
 }
-.big-number-left{
-    position: relative;
+#about .container h2{
     color: #DFDFE3;
-    margin: -130px 0 0 30px;
-    width: fit-content;
 }
 #about .container p{
     position: relative;
@@ -190,4 +212,44 @@ p{
     height: 210px;
     position: absolute;
     left: 91px;
+}
+
+/* Experiences */
+#experiences{
+    background-color: #1E1C37;
+}
+#experiences .container{
+    width: 100%;
+    padding: 200px 0;
+    text-align: right;
+}
+#experiences .container h1{
+    position: relative;
+    z-index: 1;
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+#experiences .container h2{
+    color: #3D3A5A;
+}
+#experiences .container h3{
+    position: relative;
+    float: right;
+    z-index: 1;
+    color: white;
+    width: 550px;
+    margin-top: -170px;
+}
+#experiences .vertical-line{
+    position: absolute;
+    border-left: 2px solid white;
+    left: 50%;
+}
+.fa-square-full{
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    font-size: 50px;
+    margin-left: -15px;
+    background-color: #1E1C37;
 }

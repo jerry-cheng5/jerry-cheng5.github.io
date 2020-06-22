@@ -1,8 +1,11 @@
-//Nav bar and Corner arrow button
-var navbar = document.getElementById("navbar");
-var navLinks = document.querySelector(".nav-links > ul");
-var topBtn = document.getElementById("topBtn");
+//Variables
+const navbar = document.getElementById("navbar");
+const navLinks = document.querySelector(".nav-links > ul");
+const topBtn = document.getElementById("topBtn");
+const experience = document.getElementById("experiences");
+const timeline = document.querySelector("#experiences > .vertical-line")
 
+//Scroll functions
 window.onscroll = function() {scrollFunction()};
 function scrollFunction(){
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
@@ -17,4 +20,14 @@ function scrollFunction(){
         topBtn.classList.remove("down");
         topBtn.parentElement.href = "#about";
     }
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+        topBtn.style.animation = "0";
+    }
+    else{
+        topBtn.style.animation = "bounce 2s infinite";
+    }
 }
+
+//Timeline height
+experience.style.height = "100vh";
+timeline.style.height = experience.style.height;
