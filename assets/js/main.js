@@ -31,3 +31,13 @@ function scrollFunction(){
 //Timeline height
 experience.style.height = "100vh";
 timeline.style.height = experience.style.height;
+
+//Experiences
+fetch("assets/js/variables.json")
+    .then(function(resp){
+        return resp.json();
+    })
+    .then(function(data){
+        var exps = data;
+        console.log(exps);
+    });

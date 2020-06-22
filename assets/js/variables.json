@@ -1,0 +1,128 @@
+{
+    "experiences" : [
+        {
+            "organization" : "Colonel By SS",
+            "location" : "Gloucester, Canada",
+            "name" : "Grade 9 Pre-IB",
+            "time" : "2016-2017",
+            "education" : true,
+            "courses" : [
+                "English",
+                "Math",
+                "Science",
+                "French",
+                "Geography",
+                "Health & PE",
+                "Music",
+                "Exploring Technologies",
+                "Music Repertoire"
+            ],
+            "summer" : [
+                "Civics and Career Studies",
+                "Chinese (Mandarin)"
+            ],
+            "average" : "91%"
+        },
+        {
+            "organization" : "Colonel By SS",
+            "location" : "Gloucester, Canada",
+            "name" : "Grade 10 Pre-IB",
+            "time" : "2017-2018",
+            "education" : true,
+            "courses" : [
+                "English",
+                "Math",
+                "Science",
+                "French",
+                "History",
+                "Introduction to Computer Science",
+                "Health & PE",
+                "Introduction to Business"
+            ],
+            "summer" : [
+                "Biology",
+                "Chinese (Mandarin)"
+            ],
+            "average" : "90%"
+        },
+        {
+            "organization" : "Colonel By SS",
+            "location" : "Gloucester, Canada",
+            "name" : "Grade 11 IB1",
+            "time" : "2018-2019",
+            "education" : true,
+            "courses" : [
+                "English (IB1)",
+                "Math (IB1)",
+                "Canadian Law",
+                "French (IB1)",
+                "Theory of Knowledge (IB1)",
+                "Chemistry (IB1)",
+                "Physics (IB1)",
+                "Information Technology in a Global Society (IB1)"
+            ],
+            "average" : "94%"
+        },
+        {
+            "organization" : "City of Ottawa",
+            "location" : "Ottawa, Canada",
+            "name" : "Advanced Leadership Program",
+            "time" : "2019",
+            "education" : false,
+            "info" : "",
+            "link" : ""
+        },
+        {
+            "organization" : "Ottawa District Badminton Association",
+            "location" : "Petawawa, Canada",
+            "name" : "ODBA Tournament Organizer",
+            "time" : "2019",
+            "education" : false,
+            "info" : "",
+            "link" : ""
+        },
+        {
+            "organization" : "Colonel By SS",
+            "location" : "Gloucester, Canada",
+            "name" : "Grade 12 IB2",
+            "time" : "2019-2020",
+            "education" : true,
+            "courses" : [
+                "English (IB2 HL)",
+                "Math (IB2 SL)",
+                "French (IB2 SL)",
+                "Chemistry (IB1 HL)",
+                "Physics (IB1 HL)",
+                "Mathematics of Data Management"
+            ],
+            "average" : "96%"
+        },
+        {
+            "organization" : "VEX 930",
+            "location" : "Ottawa, Canada",
+            "name" : "VEX Robotics",
+            "time" : "2019-2020",
+            "education" : false,
+            "info" : "",
+            "link" : ""
+        },
+        {
+            "organization" : "Carleton University",
+            "location" : "Ottawa, Canada",
+            "name" : "JAVA at a Glance",
+            "time" : "2019-2020",
+            "education" : false,
+            "info" : "",
+            "link" : ""
+        },
+        {
+            "organization" : "City of Ottawa",
+            "location" : "Manotick, Canada",
+            "name" : "Program Organizer/Coordinator",
+            "time" : "2019-2020",
+            "education" : false,
+            "info" : "",
+            "link" : ""
+        }
+    ]
+}
