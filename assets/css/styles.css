@@ -1,4 +1,7 @@
 /* General */
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: white;
     font-family: 'Roboto', sans-serif;
@@ -27,14 +30,14 @@ p{
 
 /* Navbar */
 #navbar{
-    height: 100px;
     background-color: #1D1C36;
-    padding: 25px 65px;
+    padding: 25px 72px;
     white-space: nowrap;
+    transition: 0.4s;
 }
 #navbar .logo{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 #navbar .container-fluid{
     padding: 0;
@@ -53,6 +56,31 @@ p{
 }
 .nav-links ul li a span{
     color: #F7861A;
+}
+
+/* Back to top arrow */
+#corner-arrow{
+    position: fixed;
+    bottom: 70px;
+    right: 90px;
+    z-index: 1001;
+}
+#topBtn{
+    color: #F7861A;
+    font-size: 36px;
+    /* animation: bounce 2s infinite; */
+}
+.rotate {
+    color: #F7861A;
+    font-size: 36px;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.down {
+    -moz-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
 }
 
 /* Home (landing page) */
@@ -127,12 +155,12 @@ p{
 
 /* About Me */
 #about{
-    height: auto;
+    height: 100vh;
     background-color: white;
 }
 #about .container{
     width: 100%;
-    padding: 250px 50px 200px;
+    padding: 200px 50px;
 }
 #about .container h1{
     position: relative;
@@ -141,17 +169,17 @@ p{
     letter-spacing: 5px;
 }
 .big-number-left{
-    position: absolute;
+    position: relative;
     color: #DFDFE3;
-    left: 230px;
-    top: 945px;
+    margin: -130px 0 0 30px;
+    width: fit-content;
 }
 #about .container p{
     position: relative;
     z-index: 1;
     font-weight: 400;
     font-size: 24px;
-    padding-top: 60px;
+    margin-top: -170px;
     width: 800px;
 }
 #about .vertical-line{
