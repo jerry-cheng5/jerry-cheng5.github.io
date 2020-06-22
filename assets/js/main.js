@@ -29,15 +29,25 @@ function scrollFunction(){
 }
 
 //Timeline height
-experience.style.height = "100vh";
+experience.style.height = "200vh";
 timeline.style.height = experience.style.height;
 
 //Experiences
+var exps;
 fetch("assets/js/variables.json")
     .then(function(resp){
         return resp.json();
     })
     .then(function(data){
-        var exps = data;
+        exps = data;
         console.log(exps);
     });
+
+for(exp in exps){
+    if (exp.education == true){
+
+    }
+    else{
+
+    }
+}
