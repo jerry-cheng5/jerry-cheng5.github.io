@@ -266,6 +266,7 @@ button{
     font-size: 32px;
     width: min-content;
     top: 135px;
+    z-index: 4;
 }
 .fa-square-full{
     -moz-transform: rotate(45deg);
@@ -378,4 +379,8 @@ button{
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+}
+.average{
+    float: right;
+    padding-right: 10px;
 }
