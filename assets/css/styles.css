@@ -169,7 +169,7 @@ button{
 #socials-bar{
     position: absolute;
     padding: 0 80px;
-    z-index: 1;
+    z-index: 1001;
     bottom: 0;
 }
 #socials-bar ul{
@@ -274,20 +274,33 @@ button{
     margin-left: -15px;
     background-color: #1E1C37;
 }
+.left-side{
+    background-color: #1E1C37;
+    border: white 1px solid;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: 3;
+}
 
 /* Education Cards */
 .education{
+    position: relative;
     align-items: center;
     padding: 25px 0;
 }
 .ed-emblem{
     text-align: center;
+    z-index: 4;
 }
 .fa-graduation-cap{
     font-size: 32px;
     color: #1E1C37;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
+}
+.education .description{
+    z-index: 4;
 }
 .education h1{
     font-size: 24px !important;
@@ -311,4 +324,58 @@ button{
 }
 .experience{
     text-align: left;
+}
+
+#popout{
+    position: absolute;
+    text-align: left;
+    z-index: 2;
+    border: white 2px solid;
+    border-radius: 10px;
+    background-color: #1E1C37;
+    transition: 0.5s;
+}
+.active{
+    transform: translateX(630px);
+}
+#popout h1{
+    color: white;
+    font-weight: 400 !important;
+    letter-spacing: 0 !important;
+}
+#popout p{
+    margin: 0;
+    color: white;
+    font-size: 16px;
+}
+#popout .courses-header{
+    margin: 0;
+    width: 100%;
+    height: 60px;
+    border-bottom: white 2px solid;
+    align-items: center;
+    text-align: center
+}
+.courses-title{
+    margin: 0;
+}
+.courses-left, .courses-right{
+    color: white;
+    font-size: 18px;
+}
+.courses{
+    padding: 20px 0;
+}
+.courses ul{
+    list-style: none;
+    margin: 0;
+    padding: 0 30px;
+}
+.courses ul li p::before {
+    content: "\2022";
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }

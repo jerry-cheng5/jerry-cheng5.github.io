@@ -4,10 +4,10 @@ const navLinks = document.querySelector(".nav-links > ul");
 const topBtn = document.getElementById("topBtn");
 const experience = document.getElementById("experiences");
 const timeline = document.querySelector("#experiences > .vertical-line")
+const coursesBtn = document.querySelector(".education > div > button");
 
 //Scroll functions
-window.onscroll = function() {scrollFunction()};
-function scrollFunction(){
+window.onscroll = function() {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
         navbar.style.padding = "10px 72px";
         navLinks.style.fontSize = "16px";
@@ -26,11 +26,17 @@ function scrollFunction(){
     else{
         topBtn.style.animation = "bounce 2s infinite";
     }
-}
+};
 
 //Timeline height
 experience.style.height = "200vh";
 timeline.style.height = experience.style.height;
+
+//Courses
+coursesBtn.onclick = function(){
+    document.getElementById("popout").classList.toggle("active");
+    document.getElementById("time").classList.toggle("hide-time");
+};
 
 //Experiences
 var exps;
@@ -51,3 +57,4 @@ for(exp in exps){
 
     }
 }
+
