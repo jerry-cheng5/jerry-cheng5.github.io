@@ -35,7 +35,13 @@ timeline.style.height = experience.style.height;
 //Courses
 coursesBtn.onclick = function(){
     document.getElementById("popout").classList.toggle("active");
-    document.getElementById("time").classList.toggle("hide-time");
+    if (document.getElementById("popout").classList.contains("active")){
+        document.getElementById("popover").innerHTML = "Hide Courses";
+    }
+    else{
+        document.getElementById("popover").innerHTML = "Show Courses";
+    }
+        
 };
 
 //Experiences

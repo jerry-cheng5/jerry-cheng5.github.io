@@ -257,6 +257,7 @@ button{
     position: absolute;
     border-left: 2px solid white;
     left: 50%;
+    z-index: 3;
 }
 .emblem{
     position: relative;
@@ -276,7 +277,6 @@ button{
 }
 .left-side{
     background-color: #1E1C37;
-    border: white 1px solid;
     position: absolute;
     width: 50%;
     height: 100%;
