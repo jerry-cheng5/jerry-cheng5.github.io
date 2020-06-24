@@ -328,6 +328,7 @@ button{
 }
 
 .popout{
+    width: 300px;
     position: absolute;
     text-align: left;
     z-index: 2;
