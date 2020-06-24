@@ -1,5 +1,6 @@
 /* General */
 html{
+    height: 100%;
     scroll-behavior: smooth;
 }
 body{
@@ -79,7 +80,7 @@ button{
     padding: 25px 72px;
     white-space: nowrap;
     transition: 0.4s;
-    box-shadow: 0px 10px 30px -10px rgba(17, 16, 41, 0.7);
+    box-shadow: 0px 10px 30px -10px rgba(17, 16, 41, 0.5);
 }
 
 #navbar .logo{
@@ -255,9 +256,11 @@ button{
 }
 #experiences .vertical-line{
     position: absolute;
+    top: 0;
     border-left: 2px solid white;
     left: 50%;
     z-index: 3;
+    height: 100%;
 }
 .emblem{
     position: relative;
@@ -279,6 +282,7 @@ button{
 .left-side{
     background-color: #1E1C37;
     position: absolute;
+    top: 0;
     width: 50%;
     height: 100%;
     z-index: 3;
@@ -303,6 +307,10 @@ button{
 .education .description{
     z-index: 4;
 }
+.education .time{
+    position: relative;
+    z-index: 4;
+}
 .education h1{
     font-size: 24px !important;
     font-weight: 400 !important;
@@ -325,6 +333,9 @@ button{
 }
 .experience{
     text-align: left;
+}
+.experience .description{
+    z-index: 0;
 }
 
 .popout{
@@ -361,10 +372,6 @@ button{
 .courses-title{
     margin: 0;
 }
-.courses-left, .courses-right{
-    color: white;
-    font-size: 18px;
-}
 .courses{
     padding: 20px 0;
 }
@@ -384,4 +391,75 @@ button{
 .average{
     float: right;
     padding-right: 10px;
+}
+
+/* Skills */
+#skills{
+    min-height: 100vh;
+    background-color: #0A0913;
+}
+#skills .container{
+    width: 100%;
+    padding: 200px 50px;
+}
+#skills .container h1{
+    position: relative;
+    z-index: 1;
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+#skills .container h2{
+    color: #525159;
+    position: relative;
+    width: fit-content;
+}
+#skills .container h3{
+    position: relative;
+    float: left;
+    z-index: 1;
+    color: white;
+    width: 550px;
+    margin-top: -170px;
+    width: 400px;
+}
+.skills-wrapper{
+    border: white 2px solid;
+}
+.skill-header button{
+    width: 100%;
+}
+.skill-header button h5{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 36px !important;
+    font-weight: 300 !important;
+    float: left;
+    margin: auto;
+}
+.skill-header button h5 span{
+    color: #F7861A;
+}
+.skill-header button i{
+    font-size: 18px;
+    color: white;
+    float: right;
+    margin: 12px 0;
+}
+.skill-body{
+    padding: 25px 0 25px 75px;
+}
+.skill-body p{
+    color: white;
+    font-size: 16px;
+    font-weight: 300px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.skill{
+    margin-bottom: 20px;
+}
+.skill .progress{
+    height: 5px;
+}
+.skill .progress .progress-bar{
+    background-color: #F7861A;
 }

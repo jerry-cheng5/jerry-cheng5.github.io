@@ -17,7 +17,7 @@
 
         <!-- Other Vendor CSS Files -->
         <link href="assets/vendor/animate.css/animate.css" rel="stylesheet">
-        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap-4.5.0-dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="assets/vendor/fontawesome-free-5.13.1-web/css/all.css" rel="stylesheet">
         <link href="assets/vendor/WOW-master/css/libs/animate.css" rel="stylesheet">
     </head>
@@ -30,11 +30,11 @@
                 </div>
                 <div class="nav-links float-right d-block">
                     <ul>
-                        <li class="d-inline"><a href="#about"><span class=number>01. </span>About</a></li>
-                        <li class="d-inline"><a href="#experiences"><span class=number>02. </span>Experiences</a></li>
-                        <li class="d-inline"><a href=""><span class=number>03. </span>Skills</a></li>
-                        <li class="d-inline"><a href=""><span class=number>04. </span>Portfolio</a></li>
-                        <li class="d-inline"><a href=""><span class=number>05. </span>Contact</a></li>
+                        <li class="d-inline"><a href="#about"><span>01. </span>About</a></li>
+                        <li class="d-inline"><a href="#experiences"><span>02. </span>Experiences</a></li>
+                        <li class="d-inline"><a href="#skills"><span>03. </span>Skills</a></li>
+                        <li class="d-inline"><a href=""><span>04. </span>Portfolio</a></li>
+                        <li class="d-inline"><a href=""><span>05. </span>Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -78,36 +78,119 @@
 
         <!-- Experiences -->
         <section id="experiences">
-            <div class="vertical-line"></div>
             <div class="container">
+                <div class="vertical-line"></div>
                 <div class="emblem"><i class="far fa-square-full"></i></div>
                 <h1>EDUCATION / EXPERIENCES</h1>
                 <h2 class="big-number-right">02</h2>
                 <h3>Where I gained valuable knowledge and skills.</h3>
                 <div class="left-side"></div>
+            </div>
+        </section>
 
-                <!-- Courses -->
-                <!-- 
-                <div class="education experience row">
-                    <div class="d-inline col">
-                        <h5 style="text-align: right;">2016-2017</h5>
+        <!-- Skills -->
+        <section id="skills">
+            <div class="container">
+                <div class="wrapper row">
+                    <div class="col-lg-5">
+                        <h1>MY SKILLS</h1>
+                        <h2 class="big-number-left">03</h2>
+                        <h3>The skills I have to offer.</h3>
                     </div>
-                    <div class="d-inline col-1 ed-emblem"><i class="fas fa-graduation-cap"></i></div>
-                    <div class="d-inline col">
-                        <h1 class="d-block">Colonel By SS</h1>
-                        <h4 class="d-block">Gloucester, Canada</h4>
-                        <h5 class="d-block">Grade 9 Pre-IB</h5>
-                        <button type="button">Show Courses</button>
-                    </div>
-                </div> -->
+                    <div class="skills-wrapper col-lg-7">
 
+                        <div id="accordion">
+                            <div class="skill-cat">
+                              <div class="skill-header" id="headingOne">
+                                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <h5 class="d-inline"><span>01. </span>Web Development</h5><i class="fas fa-chevron-down d-inline"></i>
+                                  </button>
+                              </div>
+                          
+                              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="skill-body">
+                                  <div class="skill d-block">
+                                    <p>HTML5:</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </div>
+                                  <div class="skill d-block">
+                                    <p>CSS3:</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </div>
+                                  <div class="skill d-block">
+                                    <p>JAVASCRIPT:</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </div>
+                                  <div class="skill d-block">
+                                    <p>NODE.JS:</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </div>
+                                  <div class="skill d-block">
+                                    <p>JQUERY:</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </div>
+                                  <div class="skill d-block">
+                                    <p>BOOTSTRAP:</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="skill-cat">
+                                <div class="skill-header" id="headingTwo">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                      Web Development
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                  <div class="skill-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="skill-cat">
+                                <div class="skill-header" id="headingThree">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                      Web Development
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                  <div class="skill-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Vendor JS Files -->
-        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="assets/vendor/WOW-master/dist/wow.min.js"></script>
         <script src="assets/vendor/jquery/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="assets/vendor/bootstrap-4.5.0-dist/js/bootstrap.bundle.min.js"></script>
 
         <!-- Main JS File -->
         <script src="assets/js/main.js"></script>

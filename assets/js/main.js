@@ -43,10 +43,6 @@ $.ajax({
     async: false,
 });
 
-//Timeline height
-experience.style.height = "200vh";
-timeline.style.height = experience.style.height;
-
 //Education and Experience cards
 const experiences = document.querySelector("#experiences > .container");
 for(i in jsonData.experiences){
@@ -59,36 +55,16 @@ for(i in jsonData.experiences){
         var header = document.createElement("div");
         header.classList.add("courses-header", "row");
 
-        if (jsonData.experiences[i].summer != null){
-            var leftBtn = document.createElement("div");
-            leftBtn.classList.add("courses-left", "d-inline", "col-2");
-            var chevronLeft = document.createElement("i");
-            chevronLeft.classList.add("fas", "fa-chevron-left");
-            leftBtn.appendChild(chevronLeft);
-            var title = document.createElement("h1");
-            title.classList.add("courses-title", "d-inline", "col");
-            title.innerHTML = "Courses";
-            var rightBtn = document.createElement("div");
-            rightBtn.classList.add("courses-right", "d-inline", "col-2");
-            var chevronRight = document.createElement("i");
-            chevronRight.classList.add("fas", "fa-chevron-right");
-            rightBtn.appendChild(chevronRight);
-            header.appendChild(leftBtn);
-            header.appendChild(title);
-            header.appendChild(rightBtn);
-        }
-        else{
-            var title = document.createElement("h1");
-            title.classList.add("courses-title", "d-inline", "col");
-            title.innerHTML = "Courses";
-            header.appendChild(title);
-        }
+        var title = document.createElement("h1");
+        title.classList.add("courses-title", "d-inline", "col");
+        title.innerHTML = "Courses";
+        header.appendChild(title);
 
         var courses = document.createElement("div");
         courses.classList.add("courses");
         var average = document.createElement("p");
         average.classList.add("average");
-        average.innerHTML = jsonData.experiences[i].average;
+        average.innerHTML = "Average: " + jsonData.experiences[i].average;
         var list = document.createElement("ul");
         for (j in jsonData.experiences[i].courses){
             var listItem = document.createElement("li");
@@ -149,7 +125,48 @@ for(i in jsonData.experiences){
         
     }
     else{
+        //Making the Experience card
+        var node = document.createElement("div");
+        node.classList.add("education", "experience", "row");
+
+        var description = document.createElement("div");
+        description.classList.add("d-inline", "col", "description");
+
+        var organization = document.createElement("h1");
+        organization.classList.add("d-block");
+        organization.innerHTML = jsonData.experiences[i].organization;
+        var exp_location = document.createElement("h4");
+        exp_location.classList.add("d-block");
+        exp_location.innerHTML = jsonData.experiences[i].location;
+        var exp_name = document.createElement("h5");
+        exp_name.classList.add("d-block");
+        exp_name.innerHTML = jsonData.experiences[i].name;
+        var button = document.createElement("button");
+        button.type = "button";
+        button.innerHTML = "More info";
+        button.id = jsonData.experiences[i].id;
+        description.appendChild(organization);
+        description.appendChild(exp_location);
+        description.appendChild(exp_name);
+        description.appendChild(button);
+
+        var emblem = document.createElement("div");
+        emblem.classList.add("d-inline", "col-1", "ed-emblem");
+        var icon = document.createElement("i");
+        icon.classList.add("fas", "fa-graduation-cap");
+        emblem.appendChild(icon);
+
+        var timeWrapper = document.createElement("div");
+        timeWrapper.classList.add("d-inline", "col", "time");
+        var time = document.createElement("h5");
+        time.style.textAlign = "right";
+        time.innerHTML = jsonData.experiences[i].time;
+        timeWrapper.appendChild(time);
         
+        node.appendChild(timeWrapper);
+        node.appendChild(emblem);
+        node.appendChild(description);
+        experiences.appendChild(node);
     }
 }
 
@@ -170,3 +187,43 @@ for (let i = 0; i < jsonData.experiences.length; i++) {
         })
     }
 }
+
+//Skills
+const skills = document.querySelector(".skills-wrapper");
+var accordion = document.createElement("div");
+accordion.id = "accordion";
+
+for(i in jsonData.allSkills){
+    var node = document.createElement("div");
+    node.classList.add("skill-cat");
+
+    var header = document.createElement("div");
+    header.classList.add("skill-header");
+    header.id = jsonData.allSkills[i].id;
+
+    var btn = document.createElement("button");
+    btn.classList.add("btn", "btn-link");
+    btn.dataToggle = "collapse";
+    btn.dataTarget = "#collapse" + jsonData.allSkills[i].id;
+    btn.ariaExpanded = "true";
+    btn.ariaControls = "collapse" + jsonData.allSkills[i].id;
+
+    var catName = document.createElement("h5");
+    catName.classList.add("d-inline");
+    var headNumber = document.createElement("span");
+    headNumber.innerHTML = "01. ";
+    catName.appendChild(headNumber);
+    catName.innerHTML = "<span>0" + (parseInt(i, 10)+1) + ". </span>" + jsonData.allSkills[i].catagory;
+    var downArrow = document.createElement("i");
+    downArrow.classList.add("fas", "fa-chevron-down", "d-inline");
+
+    btn.appendChild(catName);
+    btn.appendChild(downArrow);
+    header.appendChild(btn);
+    node.appendChild(header);
+
+    accordion.appendChild(node);
+    
+}
+console.log(accordion);
+skills.appendChild(accordion);
