@@ -203,10 +203,10 @@ for(i in jsonData.allSkills){
 
     var btn = document.createElement("button");
     btn.classList.add("btn", "btn-link");
-    btn.dataToggle = "collapse";
-    btn.dataTarget = "#collapse" + jsonData.allSkills[i].id;
-    btn.ariaExpanded = "true";
-    btn.ariaControls = "collapse" + jsonData.allSkills[i].id;
+    btn.setAttribute("data-toggle", "collapse");
+    btn.setAttribute("data-target", "#collapse" + jsonData.allSkills[i].id);
+    btn.setAttribute("aria-expanded", "true");
+    btn.setAttribute("aria-controls", "collapse" + jsonData.allSkills[i].id);
 
     var catName = document.createElement("h5");
     catName.classList.add("d-inline");
@@ -222,8 +222,41 @@ for(i in jsonData.allSkills){
     header.appendChild(btn);
     node.appendChild(header);
 
+    var collapseBox = document.createElement("div");
+    collapseBox.id = "collapse" + jsonData.allSkills[i].id;
+    collapseBox.classList.add("collapse");
+    collapseBox.setAttribute("aria-labelledby", jsonData.allSkills[i].id);
+    collapseBox.setAttribute("data-parent", "#accordion");
+    var skillBody = document.createElement("div");
+    skillBody.classList.add("skill-body");
+
+    for (j in jsonData.allSkills[i].skills){
+        var skill = document.createElement("div");
+        skill.classList.add("skill", "d-block");
+        var skillName = document.createElement("p");
+        skillName.innerHTML = jsonData.allSkills[i].skills[j] + ":";
+
+        var progress = document.createElement("div");
+        progress.classList.add("progress");
+        var progressBar = document.createElement("div");
+        progressBar.classList.add("progress-bar");
+        progressBar.setAttribute("role", "progressbar");
+        progressBar.style = "width: " + jsonData.allSkills[i].progress[j] + "%";
+        progressBar.setAttribute("aria-valuenow", jsonData.allSkills[i].progress[j]);
+        progressBar.setAttribute("aria-valuemin", "0");
+        progressBar.setAttribute("aria-valuemax", "100");
+
+        skill.appendChild(skillName);
+        progress.appendChild(progressBar);
+        skill.appendChild(progress);
+        skillBody.appendChild(skill);
+    }
+
+    collapseBox.appendChild(skillBody);
+    node.appendChild(collapseBox);
     accordion.appendChild(node);
+    console.log(header);
+    console.log(collapseBox);
     
 }
-console.log(accordion);
 skills.appendChild(accordion);

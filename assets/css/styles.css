@@ -46,8 +46,9 @@ h5{
 p{
     font-family: 'Roboto', sans-serif;
 }
-button{
+button, button:focus, button:active{
     outline: none !important;
+    box-shadow: none !important;
 }
 
 .rotate {
@@ -422,8 +423,8 @@ button{
     margin-top: -170px;
     width: 400px;
 }
-.skills-wrapper{
-    border: white 2px solid;
+.skill-cat{
+    margin: 20px 0;
 }
 .skill-header button{
     width: 100%;
