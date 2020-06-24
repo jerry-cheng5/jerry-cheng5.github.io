@@ -327,7 +327,7 @@ button{
     text-align: left;
 }
 
-#popout{
+.popout{
     position: absolute;
     text-align: left;
     z-index: 2;
@@ -339,17 +339,17 @@ button{
 .active{
     transform: translateX(630px);
 }
-#popout h1{
+.popout h1{
     color: white;
     font-weight: 400 !important;
     letter-spacing: 0 !important;
 }
-#popout p{
+.popout p{
     margin: 0;
     color: white;
     font-size: 16px;
 }
-#popout .courses-header{
+.popout .courses-header{
     margin: 0;
     width: 100%;
     height: 60px;
