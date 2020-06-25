@@ -246,6 +246,9 @@ for(i in jsonData.allSkills){
         progressBar.setAttribute("aria-valuenow", jsonData.allSkills[i].progress[j]);
         progressBar.setAttribute("aria-valuemin", "0");
         progressBar.setAttribute("aria-valuemax", "100");
+        progressBar.setAttribute("data-toggle", "tooltip");
+        progressBar.setAttribute("data-placement", "top");
+        progressBar.setAttribute("title", jsonData.allSkills[i].progress[j] + "%");
 
         skill.appendChild(skillName);
         progress.appendChild(progressBar);
@@ -259,25 +262,5 @@ for(i in jsonData.allSkills){
 }
 skills.appendChild(accordion);
 
-//Dropdown Buttons
-
-/* for (let i = 0; i < jsonData.allSkills.length; i++) {
-    const id = jsonData.allSkills[i].id + "btn"
-    const dropdown = document.getElementById(id);
-    const query = "#" + jsonData.allSkills[i].id + "btn > i";
-    const dropdownArrow = document.querySelector(query);
-
-    dropdown.addEventListener("click", function() {
-        for (let j = 0; j < jsonData.allSkills.length; j++){
-            const secondQuery = "collapse" + jsonData.allSkills[i].id;
-            const collapsed = document.getElementById(secondQuery);
-            if (collapsed.classList.contains("show")){
-                dropdownArrow.classList.remove("down");
-            }
-            else{
-                dropdownArrow.classList.add("down");
-            }
-        }
-        
-    });
-} */
+//Initialize tooltips
+$('[data-toggle="tooltip"]').tooltip(); 
