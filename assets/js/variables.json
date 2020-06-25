@@ -190,6 +190,7 @@
             ]
         },
         {
+            "id" : "graphic",
             "catagory" : "Graphic Design Tools",
             "skills" : [
                 "ADOBE PHOTOSHOP",

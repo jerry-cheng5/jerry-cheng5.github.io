@@ -99,7 +99,7 @@ button, button:focus, button:active{
     transition: 0.4s;
 }
 .nav-links ul li a{
-    padding: 0 12px;
+    margin: 0 12px;
     color: white;
     font-weight: 300;
     text-decoration: none;
@@ -428,6 +428,24 @@ button, button:focus, button:active{
 }
 .skill-header button{
     width: 100%;
+    display: inline-block;
+    position: relative;
+}
+.skill-header button:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: white;
+    transition: width 0.5s ease 0s, left 0.5s ease 0s;
+    width: 0;
+}
+.skill-header button:hover:after{
+    width: 100%;
+    left: 0; 
 }
 .skill-header button h5{
     font-family: 'Roboto', sans-serif !important;

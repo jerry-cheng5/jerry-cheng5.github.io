@@ -207,6 +207,7 @@ for(i in jsonData.allSkills){
     btn.setAttribute("data-target", "#collapse" + jsonData.allSkills[i].id);
     btn.setAttribute("aria-expanded", "true");
     btn.setAttribute("aria-controls", "collapse" + jsonData.allSkills[i].id);
+    btn.id = jsonData.allSkills[i].id + "btn";
 
     var catName = document.createElement("h5");
     catName.classList.add("d-inline");
@@ -215,7 +216,7 @@ for(i in jsonData.allSkills){
     catName.appendChild(headNumber);
     catName.innerHTML = "<span>0" + (parseInt(i, 10)+1) + ". </span>" + jsonData.allSkills[i].catagory;
     var downArrow = document.createElement("i");
-    downArrow.classList.add("fas", "fa-chevron-down", "d-inline");
+    downArrow.classList.add("fas", "fa-chevron-down", "d-inline", "rotate");
 
     btn.appendChild(catName);
     btn.appendChild(downArrow);
@@ -255,8 +256,24 @@ for(i in jsonData.allSkills){
     collapseBox.appendChild(skillBody);
     node.appendChild(collapseBox);
     accordion.appendChild(node);
-    console.log(header);
-    console.log(collapseBox);
-    
 }
 skills.appendChild(accordion);
+
+//Dropdown Buttons
+for (let i = 0; i < jsonData.allSkills.length; i++) {
+    const id = jsonData.allSkills[i].id + "btn"
+    const dropdown = document.getElementById(id);
+    const query = "#" + jsonData.allSkills[i].id + "btn > i";
+    const dropdownArrow = document.querySelector(query);
+    const secondQuery = "collapse" + jsonData.allSkills[i].id;
+    const collapsed = document.getElementById(secondQuery);
+
+    dropdown.addEventListener("click", function() {
+        if (collapsed.classList.contains("show")){
+            dropdownArrow.classList.remove("down");
+        }
+        else{
+            dropdownArrow.classList.add("down");
+        }
+    });
+}
