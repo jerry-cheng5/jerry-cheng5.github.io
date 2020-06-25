@@ -202,7 +202,7 @@ for(i in jsonData.allSkills){
     header.id = jsonData.allSkills[i].id;
 
     var btn = document.createElement("button");
-    btn.classList.add("btn", "btn-link");
+    btn.classList.add("btn", "btn-link", "collapsed");
     btn.setAttribute("data-toggle", "collapse");
     btn.setAttribute("data-target", "#collapse" + jsonData.allSkills[i].id);
     btn.setAttribute("aria-expanded", "true");
@@ -216,7 +216,7 @@ for(i in jsonData.allSkills){
     catName.appendChild(headNumber);
     catName.innerHTML = "<span>0" + (parseInt(i, 10)+1) + ". </span>" + jsonData.allSkills[i].catagory;
     var downArrow = document.createElement("i");
-    downArrow.classList.add("fas", "fa-chevron-down", "d-inline", "rotate");
+    downArrow.classList.add("fas", "fa-chevron-down", "d-inline");
 
     btn.appendChild(catName);
     btn.appendChild(downArrow);
@@ -260,20 +260,24 @@ for(i in jsonData.allSkills){
 skills.appendChild(accordion);
 
 //Dropdown Buttons
-for (let i = 0; i < jsonData.allSkills.length; i++) {
+
+/* for (let i = 0; i < jsonData.allSkills.length; i++) {
     const id = jsonData.allSkills[i].id + "btn"
     const dropdown = document.getElementById(id);
     const query = "#" + jsonData.allSkills[i].id + "btn > i";
     const dropdownArrow = document.querySelector(query);
-    const secondQuery = "collapse" + jsonData.allSkills[i].id;
-    const collapsed = document.getElementById(secondQuery);
 
     dropdown.addEventListener("click", function() {
-        if (collapsed.classList.contains("show")){
-            dropdownArrow.classList.remove("down");
+        for (let j = 0; j < jsonData.allSkills.length; j++){
+            const secondQuery = "collapse" + jsonData.allSkills[i].id;
+            const collapsed = document.getElementById(secondQuery);
+            if (collapsed.classList.contains("show")){
+                dropdownArrow.classList.remove("down");
+            }
+            else{
+                dropdownArrow.classList.add("down");
+            }
         }
-        else{
-            dropdownArrow.classList.add("down");
-        }
+        
     });
-}
+} */
