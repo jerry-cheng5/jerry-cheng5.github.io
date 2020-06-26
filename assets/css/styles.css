@@ -491,13 +491,13 @@ button, button:focus, button:active{
 
 /* Portfolio */
 #portfolio{
-    min-height: 100vh;
+    height: max-content;
     background-color: white;
     position: relative;
 }
 #portfolio .container{
     width: 100%;
-    padding: 200px 50px 100px;
+    padding: 200px 50px 50px;
 }
 #portfolio .container h1{
     position: relative;
@@ -517,6 +517,9 @@ button, button:focus, button:active{
     color: black;
     margin-top: -170px;
     width: 600px;
+}
+#portfolio .container .carousel{
+    height: 650px;
 }
 #portfolio .container .project{
     max-width: 600px;
@@ -539,6 +542,7 @@ button, button:focus, button:active{
     color: #3D3A5A;
     font-size: 18px;
     font-weight: 400;
+    padding-right: 5px;
 }
 .project hr{
     border: 2px solid #1E1C37;
@@ -579,10 +583,44 @@ button, button:focus, button:active{
     font-size: 36px;
 }
 #portfolio .projects-wrapper{
-    border: 2px black solid;
+    /* border: 2px black solid; */
     position: absolute;
 	width: 50%;
-    height: 600px;
-    right: 50px;
+    height: 75%;
+    right: 0px;
     bottom: 0px;
+    overflow: hidden;
+}
+.projects-wrapper .webpage-image{
+    -webkit-box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.20);
+    -moz-box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.20);
+    box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.20);
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -10%;
+}
+.projects-wrapper .phone-image{
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.20));
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.20));
+    position: absolute;
+    max-width: 25%;
+    bottom: -10%;
+}
+#website{
+    max-width: 85%;
+    right: 6%;
+}
+#synergyy-web{
+    max-width: 70%;
+    right: 10%;
+}
+#synergyy-bot{
+    right: 12%;
+}
+
+/* Contact */
+#contact{
+    height: 100vh;
+    background-color: white;
 }
