@@ -551,6 +551,8 @@ button, button:focus, button:active{
     font-weight: 400 !important;
     padding-left: 20px;
 }
+
+/* Carousel */
 .carousel-item-next.carousel-item-left,
 .carousel-item-prev.carousel-item-right {
     -webkit-transform: translate3d(0, 0, 0);

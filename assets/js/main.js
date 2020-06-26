@@ -264,3 +264,61 @@ skills.appendChild(accordion);
 
 //Initialize tooltips
 $('[data-toggle="tooltip"]').tooltip(); 
+
+//Projects
+const projectsWrapper = document.querySelector(".carousel-inner");
+
+for(i in jsonData.projects){
+    var carItem = document.createElement("div");
+    carItem.classList.add("carousel-item");
+    if (i == 0){
+        carItem.classList.add("active");
+    }
+
+    var project = document.createElement("div");
+    project.classList.add("project");
+    projName = document.createElement("h5");
+    projName.innerHTML = jsonData.projects[i].name;
+    var links = document.createElement("span");
+    
+    if (jsonData.projects[i].github != ""){
+        var github = document.createElement("a");
+        github.href = jsonData.projects[i].github;
+        var icon = document.createElement("i");
+        icon.classList.add("fab", "fa-github");
+        github.appendChild(icon);
+        links.appendChild(github);
+    }
+    if(jsonData.projects[i].externalLink != ""){
+        var link = document.createElement("a");
+        link.href = jsonData.projects[i].externalLink;
+        var icon = document.createElement("i");
+        icon.classList.add("fas", "fa-external-link-alt");
+        link.appendChild(icon);
+        links.appendChild(link);
+    }
+    projName.append(links);
+    var type = document.createElement("h4");
+    type.innerHTML = jsonData.projects[i].type;
+    var description = document.createElement("p");
+    description.innerHTML = jsonData.projects[i].description;
+    var line = document.createElement("hr");
+    var subtitle = document.createElement("h4");
+    subtitle.innerHTML = "LANGUAGES, LIBRARIES, AND TOOLS USED";
+    var tools = document.createElement("ul");
+
+    for (j in jsonData.projects[i].used){
+        var tool = document.createElement("li");
+        tool.innerHTML = jsonData.projects[i].used[j];
+        tools.appendChild(tool);
+    }
+
+    project.appendChild(projName);
+    project.appendChild(type);
+    project.appendChild(description);
+    project.appendChild(line);
+    project.appendChild(subtitle);
+    project.appendChild(tools);
+    carItem.appendChild(project);
+    projectsWrapper.appendChild(carItem);
+}
