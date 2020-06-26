@@ -349,7 +349,7 @@ button, button:focus, button:active{
     background-color: #1E1C37;
     transition: 0.5s;
 }
-.active{
+.pop-active{
     transform: translateX(630px);
 }
 .popout h1{
@@ -419,7 +419,6 @@ button, button:focus, button:active{
     float: left;
     z-index: 1;
     color: white;
-    width: 550px;
     margin-top: -170px;
     width: 400px;
 }
@@ -488,4 +487,100 @@ button, button:focus, button:active{
 }
 .skill .progress .progress-bar{
     background-color: #F7861A;
+}
+
+/* Portfolio */
+#portfolio{
+    min-height: 100vh;
+    background-color: white;
+    position: relative;
+}
+#portfolio .container{
+    width: 100%;
+    padding: 200px 50px 100px;
+}
+#portfolio .container h1{
+    position: relative;
+    z-index: 1;
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+#portfolio .container h2{
+    color: #DFDFE3;
+    position: relative;
+    width: fit-content;
+}
+#portfolio .container h3{
+    position: relative;
+    float: left;
+    z-index: 1;
+    color: black;
+    margin-top: -170px;
+    width: 600px;
+}
+#portfolio .container .project{
+    max-width: 600px;
+}
+.project h5{
+    font-size: 32px !important;
+    font-weight: 400 !important;
+    color: #1E1C37;
+    margin: 0;
+}
+.project h5 a{
+    color: #1E1C37;
+    padding: 0 10px;
+}
+.project h4{
+    margin: 12px 0 !important;
+    font-weight: 400px !important;
+}
+.project p{
+    color: #3D3A5A;
+    font-size: 18px;
+    font-weight: 400;
+}
+.project hr{
+    border: 2px solid #1E1C37;
+    width: 150px;
+    margin: 32px 0;
+}
+.project ul{
+    color: #3D3A5A;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    padding-left: 20px;
+}
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.carousel-item-next,
+.active.carousel-item-right {
+    -webkit-transform: translate3d(-100%, 0, 0) !important;
+    transform: translate3d(-100%, 0, 0) !important;
+}
+.carousel-item-prev,
+.active.carousel-item-left {
+    -webkit-transform: translate3d(0, +100%, 0) !important;
+    transform: translate3d(0, +100%, 0) !important;
+}
+.carousel-control-prev{
+    margin-left: -150px;
+}
+.carousel-control-next{
+    margin-right: -150px;
+}
+.fa-chevron-left, .fa-chevron-right{
+    color: black;
+    font-size: 36px;
+}
+#portfolio .projects-wrapper{
+    border: 2px black solid;
+    position: absolute;
+	width: 50%;
+    height: 600px;
+    right: 50px;
+    bottom: 0px;
 }

@@ -221,5 +221,58 @@
                 "95"
             ]
         }
+    ],
+    "projects" :[
+        {
+            "name" : "Portfolio Website",
+            "type" : "WEB DEVELOPMENT",
+            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt justo pulvinar vulputate laoreet. Nullam velit tellus, tristique vel consectetur id, imperdiet nec lectus. Nunc ut suscipit turpis, non sollicitudin tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam dolor lectus, dictum eget blandit et, malesuada in neque. Fusce tempus est in est sagittis aliquet. Etiam eu feugiat leo. Aenean rutrum augue vitae diam aliquam semper. Duis fermentum molestie enim. Fusce tristique ultrices bibendum.",
+            "used" : [
+                "HTML5",
+                "CSS3",
+                "Bootstrap",
+                "JavaScript",
+                "JQuery",
+                "Figma",
+                "Photoshop"
+            ],
+            "github" : "",
+            "externalLink" : "",
+            "projectImage" : ""
+        },
+        {
+            "name" : "Synergyy Website",
+            "type" : "WEB DEVELOPMENT",
+            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt justo pulvinar vulputate laoreet. Nullam velit tellus, tristique vel consectetur id, imperdiet nec lectus. Nunc ut suscipit turpis, non sollicitudin tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam dolor lectus, dictum eget blandit et, malesuada in neque. Fusce tempus est in est sagittis aliquet. Etiam eu feugiat leo. Aenean rutrum augue vitae diam aliquam semper. Duis fermentum molestie enim. Fusce tristique ultrices bibendum.",
+            "used" : [
+                "HTML5",
+                "CSS3",
+                "SCSS",
+                "Bootstrap",
+                "JavaScript",
+                "JQuery",
+                "PHP",
+                "Figma",
+                "Photoshop"
+            ],
+            "github" : "",
+            "externalLink" : "",
+            "projectImage" : ""
+        },
+        {
+            "name" : "Synergyy Discord Bot",
+            "type" : "AUTOMATED DISCORD BOT",
+            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt justo pulvinar vulputate laoreet. Nullam velit tellus, tristique vel consectetur id, imperdiet nec lectus. Nunc ut suscipit turpis, non sollicitudin tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam dolor lectus, dictum eget blandit et, malesuada in neque. Fusce tempus est in est sagittis aliquet. Etiam eu feugiat leo. Aenean rutrum augue vitae diam aliquam semper. Duis fermentum molestie enim. Fusce tristique ultrices bibendum.",
+            "used" : [
+                "Python 3",
+                "Discord.py",
+                "SQL and SQLite",
+                "AWS Hosting",
+                "Many smaller python libraries"
+            ],
+            "github" : "",
+            "externalLink" : "",
+            "projectImage" : ""
+        }
     ]
 }

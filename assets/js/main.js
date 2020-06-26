@@ -177,8 +177,8 @@ for (let i = 0; i < jsonData.experiences.length; i++) {
         const query = jsonData.experiences[i].id + "-popout";
         const popout = document.getElementById(query);
         coursesBtn.addEventListener("click", function() {
-            popout.classList.toggle("active");
-            if (popout.classList.contains("active")){
+            popout.classList.toggle("pop-active");
+            if (popout.classList.contains("pop-active")){
                 coursesBtn.innerHTML = "Hide Courses";
             }
             else{
