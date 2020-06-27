@@ -365,3 +365,16 @@ for (let i = 0; i < jsonData.projects.length; i++) {
         }
     })
 }
+
+//Form
+const messageBox = document.querySelector("form > div > label > textarea");
+messageBox.addEventListener("focus", function() {
+    if (this.innerHTML == "Your Message"){
+        this.innerHTML = "";
+    }
+})
+messageBox.addEventListener("blur", function() {
+    if (this.innerHTML == ""){
+        this.innerHTML = "Your Message";
+    }
+})

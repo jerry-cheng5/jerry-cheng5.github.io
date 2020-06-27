@@ -9,10 +9,10 @@ body{
     color: white;
 }
 a{
-    color: white;
+    color: white !important;
 }
 a:hover, a:active, a:focus{
-    color: #F7861A;
+    color: #F7861A !important;
 }
 h1{
     font-family: 'Roboto', sans-serif;
@@ -163,7 +163,7 @@ button, button:focus, button:active{
     background-color: transparent;
 }
 #resume-btn:hover{
-    background-color: #f7851a0a;
+    background-color: #f7851a1a;
     transition: all linear 0.2s;
 }
 
@@ -329,7 +329,7 @@ button, button:focus, button:active{
     background-color: transparent;
 }
 .education button:hover{
-    background-color: #ffffff0a;
+    background-color: #ffffff1a;
     transition: all linear 0.2s;
 }
 .experience{
@@ -655,4 +655,94 @@ button, button:focus, button:active{
 #contact{
     height: 100vh;
     background-color: #0A0913;
+}
+#contact .container{
+    width: 100%;
+    padding: 150px 50px 100px;
+}
+#contact .container h1{
+    position: relative;
+    z-index: 1;
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+#contact .container h2{
+    color: #525159;
+    position: relative;
+    width: fit-content;
+}
+#contact .container h3{
+    position: relative;
+    float: left;
+    z-index: 1;
+    color: white;
+    margin-top: -170px;
+}
+#contact .socials-wrapper{
+    font-family: 'Roboto', sans-serif !important;
+}
+.socials-wrapper h1{
+    letter-spacing: normal !important;
+    font-weight: 400 !important;
+    margin-bottom: 10px;
+}
+.socials-wrapper a{
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none !important;
+}
+.socials-wrapper .d-block{
+    width: min-content;
+}
+/* Form */
+form{
+    margin-top: 50px;
+}
+form label{
+    padding: 0 5px 5px;
+}
+form label input{
+    border: white 1px solid;
+    border-radius: 5px;
+    height: 50px;
+    padding: 15px;
+    color: #95949E;
+    background-color: transparent;
+}
+form label textarea{
+    border: white 1px solid;
+    border-radius: 5px;
+    height: 100px;
+    padding: 15px;
+    color: #95949E;
+    background-color: transparent;
+}
+label input{
+    width: 100%;
+}
+label textarea{
+    width: 100%;
+}
+#send-btn{
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    border: 2px solid #F7861A;
+    color: #F7861A;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background-color: transparent;
+}
+#send-btn:hover{
+    background-color: #f7851a1a;
+    transition: all linear 0.2s;
+}
+input, input:focus, input:active{
+    outline: none !important;
+    box-shadow: none !important;
+}
+textarea, textarea:focus, textarea:active{
+    outline: none !important;
+    box-shadow: none !important;
 }
