@@ -322,3 +322,19 @@ for(i in jsonData.projects){
     carItem.appendChild(project);
     projectsWrapper.appendChild(carItem);
 }
+
+//Project Images
+const picturesWrapper = document.querySelector(".projects-wrapper");
+
+for(i in jsonData.projects){
+    var node = document.createElement("img");
+    if (jsonData.projects[i].webpage == true){
+        node.classList.add("webpage-image");
+    }
+    else{
+        node.classList.add("phone-image");
+    }
+    node.id = jsonData.projects[i].id;
+    node.src = jsonData.projects[i].projectImage;
+    picturesWrapper.appendChild(node);
+}

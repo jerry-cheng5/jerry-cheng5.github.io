@@ -498,6 +498,13 @@ button, button:focus, button:active{
 #portfolio .container{
     width: 100%;
     padding: 200px 50px 50px;
+    margin: 0 150px;
+}
+@media (min-width: 1500px){
+    #portfolio .container{
+        max-width: 38%;
+        margin: 0 300px !important;
+    }
 }
 #portfolio .container h1{
     position: relative;
@@ -573,17 +580,27 @@ button, button:focus, button:active{
     transform: translate3d(0, +100%, 0) !important;
 }
 .carousel-control-prev{
-    margin-left: -150px;
+    margin: auto 0 auto -10vw;
+    height: 100px;
 }
 .carousel-control-next{
-    margin-right: -150px;
+    margin: auto -10px auto 0;
+    height: 100px;
+}
+@media (min-width: 1500px){
+    .carousel-control-prev{
+        margin-left: -5vw;
+    }
+    .carousel-control-next{
+        margin-right: -2vw;
+    }
 }
 .fa-chevron-left, .fa-chevron-right{
     color: black;
     font-size: 36px;
 }
+/* Images */
 #portfolio .projects-wrapper{
-    /* border: 2px black solid; */
     position: absolute;
 	width: 50%;
     height: 75%;
@@ -599,15 +616,16 @@ button, button:focus, button:active{
     border-radius: 5px;
     position: absolute;
     bottom: -10%;
+    transition: all linear 0.2s;
 }
 .projects-wrapper .phone-image{
     -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.20));
     filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.20));
     position: absolute;
     max-width: 25%;
-    bottom: -10%;
+    bottom: -15%;
 }
-#website{
+#my-website{
     max-width: 85%;
     right: 6%;
 }
@@ -618,9 +636,15 @@ button, button:focus, button:active{
 #synergyy-bot{
     right: 12%;
 }
+.selected{
+    bottom: 0 !important;
+}
+.blurred{
+    opacity: 0.2;
+}
 
 /* Contact */
 #contact{
     height: 100vh;
-    background-color: white;
+    background-color: #0A0913;
 }

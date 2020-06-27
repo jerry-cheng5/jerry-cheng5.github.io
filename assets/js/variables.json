@@ -224,6 +224,7 @@
     ],
     "projects" :[
         {
+            "id" : "my-website",
             "name" : "Portfolio Website",
             "type" : "WEB DEVELOPMENT",
             "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt justo pulvinar vulputate laoreet. Nullam velit tellus, tristique vel consectetur id, imperdiet nec lectus. Nunc ut suscipit turpis, non sollicitudin tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam dolor lectus, dictum eget blandit et, malesuada in neque. Fusce tempus est in est sagittis aliquet. Etiam eu feugiat leo. Aenean rutrum augue vitae diam aliquam semper. Duis fermentum molestie enim. Fusce tristique ultrices bibendum.",
@@ -238,9 +239,11 @@
             ],
             "github" : "",
             "externalLink" : "",
-            "projectImage" : ""
+            "projectImage" : "assets/images/portfolioWebsite.jpg",
+            "webpage" : true
         },
         {
+            "id" : "synergyy-web",
             "name" : "Synergyy Website",
             "type" : "WEB DEVELOPMENT",
             "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt justo pulvinar vulputate laoreet. Nullam velit tellus, tristique vel consectetur id, imperdiet nec lectus. Nunc ut suscipit turpis, non sollicitudin tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam dolor lectus, dictum eget blandit et, malesuada in neque. Fusce tempus est in est sagittis aliquet. Etiam eu feugiat leo. Aenean rutrum augue vitae diam aliquam semper. Duis fermentum molestie enim. Fusce tristique ultrices bibendum.",
@@ -255,11 +258,13 @@
                 "Figma",
                 "Photoshop"
             ],
-            "github" : "",
+            "github" : "https://github.com/SynergyyBot/Synergyy-Website",
             "externalLink" : "",
-            "projectImage" : ""
+            "projectImage" : "assets/images/SynergyyWebsite.jpg",
+            "webpage" : true
         },
         {
+            "id" : "synergyy-bot",
             "name" : "Synergyy Discord Bot",
             "type" : "AUTOMATED DISCORD BOT",
             "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt justo pulvinar vulputate laoreet. Nullam velit tellus, tristique vel consectetur id, imperdiet nec lectus. Nunc ut suscipit turpis, non sollicitudin tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam dolor lectus, dictum eget blandit et, malesuada in neque. Fusce tempus est in est sagittis aliquet. Etiam eu feugiat leo. Aenean rutrum augue vitae diam aliquam semper. Duis fermentum molestie enim. Fusce tristique ultrices bibendum.",
@@ -270,9 +275,10 @@
                 "AWS Hosting",
                 "Many smaller python libraries"
             ],
-            "github" : "",
+            "github" : "https://github.com/SynergyyBot/SynergyyBot",
             "externalLink" : "",
-            "projectImage" : ""
+            "projectImage" : "assets/images/synergyybot.png",
+            "webpage" : false
         }
     ]
 }
