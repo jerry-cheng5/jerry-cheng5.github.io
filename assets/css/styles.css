@@ -13,8 +13,8 @@ body{
     color: white;
 }
 a{
-    color: white !important;
-    transition: all linear 0.2s;
+    color: white;
+    transition: color linear 0.2s;
 }
 a:hover, a:active, a:focus{
     color: #F7861A !important;
@@ -689,12 +689,18 @@ button, button:focus, button:active{
 
 /* Contact */
 #contact{
-    height: 100vh;
+    min-height: 100vh;
     background-color: #0A0913;
 }
 #contact .container{
     width: 100%;
     padding: 150px 50px 100px;
+}
+@media (min-width: 1500px){
+    #contact .container{
+        width: 100%;
+        padding: 200px 50px 100px;
+    }
 }
 #contact .container h1{
     position: relative;
