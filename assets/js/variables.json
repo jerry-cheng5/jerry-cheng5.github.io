@@ -227,7 +227,7 @@
             "id" : "my-website",
             "name" : "Portfolio Website",
             "type" : "WEB DEVELOPMENT",
-            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt justo pulvinar vulputate laoreet. Nullam velit tellus, tristique vel consectetur id, imperdiet nec lectus. Nunc ut suscipit turpis, non sollicitudin tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam dolor lectus, dictum eget blandit et, malesuada in neque. Fusce tempus est in est sagittis aliquet. Etiam eu feugiat leo. Aenean rutrum augue vitae diam aliquam semper. Duis fermentum molestie enim. Fusce tristique ultrices bibendum.",
+            "description" : "Since I was introduced to Web Development in grade 9, I’ve enjoyed designing and creating websites. I’ve created many small websites in my technology courses in highschool, and I decided to take everything I learned to create this website. I took the basics that I learned from school and merged them with various frameworks/libraries such as Bootstrap, Animate.css, Wow.js, JQuery, and more. I also wanted to make this website dynamic, so I also learned about JSON files and how to use them for Web Development. This website served as a practice tool to improve my web development skills as well as a portfolio for my many future projects!",
             "used" : [
                 "HTML5",
                 "CSS3",
@@ -246,7 +246,7 @@
             "id" : "synergyy-web",
             "name" : "Synergyy Website",
             "type" : "WEB DEVELOPMENT",
-            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt justo pulvinar vulputate laoreet. Nullam velit tellus, tristique vel consectetur id, imperdiet nec lectus. Nunc ut suscipit turpis, non sollicitudin tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam dolor lectus, dictum eget blandit et, malesuada in neque. Fusce tempus est in est sagittis aliquet. Etiam eu feugiat leo. Aenean rutrum augue vitae diam aliquam semper. Duis fermentum molestie enim. Fusce tristique ultrices bibendum.",
+            "description" : "This is the website that my friend and I made for our Project Management discord bot–SynergyyBot. This website includes descriptions and documents about our bot as well as quick and simple guides on how to use our bot. It also has a FAQ and a reviews section which can help the users. We used the basic web development tools as well as Bootstrap, Animate.css, Wow.js, PHP forms, and more. This was another great project that allowed me to hone my web development skills as well as my graphic designing skills.",
             "used" : [
                 "HTML5",
                 "CSS3",
@@ -267,7 +267,7 @@
             "id" : "synergyy-bot",
             "name" : "Synergyy Discord Bot",
             "type" : "AUTOMATED DISCORD BOT",
-            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt justo pulvinar vulputate laoreet. Nullam velit tellus, tristique vel consectetur id, imperdiet nec lectus. Nunc ut suscipit turpis, non sollicitudin tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam dolor lectus, dictum eget blandit et, malesuada in neque. Fusce tempus est in est sagittis aliquet. Etiam eu feugiat leo. Aenean rutrum augue vitae diam aliquam semper. Duis fermentum molestie enim. Fusce tristique ultrices bibendum.",
+            "description" : "Many highschools and universities have announced that for the 2020 Fall Semester, all courses will be online. This sparked the creation of SynergyyBot–A Project Management Discord Bot Built for Students. This bot includes meeting creation, RVSP, reminders, task creation, Google Calendar integration, and more. My friend and I did this by using Discord’s python API, discord.py, as well as SQLite and SQL to store data. We are also hosting this bot on AWS, so that it can be used by many discord servers. We also learned the Google Calendar API to add Google Calendar integration to our bot. We hope that this bot can help with team collaboration during the upcoming school terms.",
             "used" : [
                 "Python 3",
                 "Discord.py",

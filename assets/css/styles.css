@@ -529,7 +529,14 @@ button, button:focus, button:active{
     height: 650px;
 }
 #portfolio .container .project{
-    max-width: 600px;
+    max-width: 55%;
+    position: relative;
+    z-index: 10;
+}
+@media (min-width: 1500px){
+    #portfolio .container .project{
+        max-width: 100%;
+    }
 }
 .project h5{
     font-size: 32px !important;
@@ -549,7 +556,6 @@ button, button:focus, button:active{
     color: #3D3A5A;
     font-size: 18px;
     font-weight: 400;
-    padding-right: 5px;
 }
 .project hr{
     border: 2px solid #1E1C37;
@@ -584,7 +590,7 @@ button, button:focus, button:active{
     height: 100px;
 }
 .carousel-control-next{
-    margin: auto -10px auto 0;
+    margin: auto -10vw auto 0;
     height: 100px;
 }
 @media (min-width: 1500px){
@@ -592,7 +598,7 @@ button, button:focus, button:active{
         margin-left: -5vw;
     }
     .carousel-control-next{
-        margin-right: -2vw;
+        margin-right: -4vw;
     }
 }
 .fa-chevron-left, .fa-chevron-right{
@@ -623,7 +629,8 @@ button, button:focus, button:active{
     filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.20));
     position: absolute;
     max-width: 25%;
-    bottom: -15%;
+    bottom: -10%;
+    transition: all linear 0.2s;
 }
 #my-website{
     max-width: 85%;
@@ -638,9 +645,10 @@ button, button:focus, button:active{
 }
 .selected{
     bottom: 0 !important;
+    cursor: pointer;
 }
 .blurred{
-    opacity: 0.2;
+    opacity: 0.1;
 }
 
 /* Contact */

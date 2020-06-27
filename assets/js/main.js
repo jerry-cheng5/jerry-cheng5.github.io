@@ -336,5 +336,32 @@ for(i in jsonData.projects){
     }
     node.id = jsonData.projects[i].id;
     node.src = jsonData.projects[i].projectImage;
+    node.setAttribute("data-target", "#projects-carousel");
+    node.setAttribute("data-slide-to", i.toString());
     picturesWrapper.appendChild(node);
+}
+
+//Image Hovers
+for (let i = 0; i < jsonData.projects.length; i++) {
+    const currentNode = document.getElementById(jsonData.projects[i].id);
+
+    currentNode.addEventListener("mouseover", function() {
+        currentNode.classList.add("selected");
+        for (let j = i; j < jsonData.projects.length; j++){
+            if (jsonData.projects[j].id != jsonData.projects[i].id){
+                const otherNode = document.getElementById(jsonData.projects[j].id);
+                console.log(otherNode);
+                otherNode.classList.add("blurred");
+            }
+        }
+    })
+    currentNode.addEventListener("mouseout", function() {
+        currentNode.classList.remove("selected");
+        for (let j = i; j < jsonData.projects.length; j++){
+            if (jsonData.projects[j].id != jsonData.projects[i].id){
+                const otherNode = document.getElementById(jsonData.projects[j].id);
+                otherNode.classList.remove("blurred");
+            }
+        }
+    })
 }
