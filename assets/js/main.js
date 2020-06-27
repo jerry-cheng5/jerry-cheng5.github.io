@@ -153,7 +153,7 @@ for(i in jsonData.experiences){
         var emblem = document.createElement("div");
         emblem.classList.add("d-inline", "col-1", "ed-emblem");
         var icon = document.createElement("i");
-        icon.classList.add("fas", "fa-graduation-cap");
+        icon.classList.add(jsonData.experiences[i].iconType, jsonData.experiences[i].icon);
         emblem.appendChild(icon);
 
         var timeWrapper = document.createElement("div");

@@ -66,7 +66,9 @@
             "time" : "2019",
             "education" : false,
             "info" : "",
-            "link" : ""
+            "link" : "",
+            "iconType" : "fas",
+            "icon" : "fa-users"
         },
         {
             "id" : "odba",
@@ -76,7 +78,9 @@
             "time" : "2019",
             "education" : false,
             "info" : "",
-            "link" : ""
+            "link" : "",
+            "iconType" : "fas",
+            "icon" : "fa-clipboard"
         },
         {
             "id" : "grade-twelve",
@@ -103,7 +107,9 @@
             "time" : "2019-2020",
             "education" : false,
             "info" : "",
-            "link" : ""
+            "link" : "",
+            "iconType" : "fas",
+            "icon" : "fa-cogs"
         },
         {
             "id" : "java",
@@ -113,7 +119,9 @@
             "time" : "2019-2020",
             "education" : false,
             "info" : "",
-            "link" : ""
+            "link" : "",
+            "iconType" : "fas",
+            "icon" : "fa-code"
         },
         {
             "id" : "skating",
@@ -123,7 +131,9 @@
             "time" : "2019-2020",
             "education" : false,
             "info" : "",
-            "link" : ""
+            "link" : "",
+            "iconType" : "fas",
+            "icon" : "fa-briefcase"
         }
     ],
     "allSkills" : [
