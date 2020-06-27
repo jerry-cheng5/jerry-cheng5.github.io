@@ -65,10 +65,11 @@
             "name" : "Advanced Leadership Program",
             "time" : "2019",
             "education" : false,
-            "info" : "",
+            "info" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet vehicula sem, et iaculis sapien. Curabitur erat orci, tincidunt at sapien eget, consectetur laoreet diam. Integer et dolor vel lorem porttitor aliquam vitae et lorem. Sed est metus, mattis sed sem accumsan, consequat mattis purus. Fusce non tellus eros. Cras non viverra tortor, vel hendrerit lacus. In sit amet viverra lorem. Donec vulputate enim eu dui tincidunt ornare. Donec velit elit, molestie a efficitur ut, vulputate ac massa. Nunc ornare lectus mi, nec vulputate nunc ultrices vitae. Curabitur enim quam, luctus vitae fermentum in, vehicula eu eros. Donec ullamcorper, sem feugiat convallis interdum, ligula lacus aliquam lectus, a accumsan elit mauris eget mi. Suspendisse potenti. Duis pellentesque auctor arcu, at scelerisque ipsum convallis ac. Quisque dapibus congue nibh sit amet tempus. Etiam risus quam, accumsan eu arcu ac, sodales ultrices eros.",
             "link" : "",
             "iconType" : "fas",
-            "icon" : "fa-users"
+            "icon" : "fa-users",
+            "image" : "assets/images/CityofOttawa.jpg"
         },
         {
             "id" : "odba",
@@ -77,10 +78,11 @@
             "name" : "ODBA Tournament Organizer",
             "time" : "2019",
             "education" : false,
-            "info" : "",
+            "info" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet vehicula sem, et iaculis sapien. Curabitur erat orci, tincidunt at sapien eget, consectetur laoreet diam. Integer et dolor vel lorem porttitor aliquam vitae et lorem. Sed est metus, mattis sed sem accumsan, consequat mattis purus. Fusce non tellus eros. Cras non viverra tortor, vel hendrerit lacus. In sit amet viverra lorem. Donec vulputate enim eu dui tincidunt ornare. Donec velit elit, molestie a efficitur ut, vulputate ac massa. Nunc ornare lectus mi, nec vulputate nunc ultrices vitae. Curabitur enim quam, luctus vitae fermentum in, vehicula eu eros. Donec ullamcorper, sem feugiat convallis interdum, ligula lacus aliquam lectus, a accumsan elit mauris eget mi. Suspendisse potenti. Duis pellentesque auctor arcu, at scelerisque ipsum convallis ac. Quisque dapibus congue nibh sit amet tempus. Etiam risus quam, accumsan eu arcu ac, sodales ultrices eros.",
             "link" : "",
             "iconType" : "fas",
-            "icon" : "fa-clipboard"
+            "icon" : "fa-clipboard",
+            "image" : "assets/images/ODBA.jpg"
         },
         {
             "id" : "grade-twelve",
@@ -106,10 +108,11 @@
             "name" : "VEX Robotics",
             "time" : "2019-2020",
             "education" : false,
-            "info" : "",
+            "info" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet vehicula sem, et iaculis sapien. Curabitur erat orci, tincidunt at sapien eget, consectetur laoreet diam. Integer et dolor vel lorem porttitor aliquam vitae et lorem. Sed est metus, mattis sed sem accumsan, consequat mattis purus. Fusce non tellus eros. Cras non viverra tortor, vel hendrerit lacus. In sit amet viverra lorem. Donec vulputate enim eu dui tincidunt ornare. Donec velit elit, molestie a efficitur ut, vulputate ac massa. Nunc ornare lectus mi, nec vulputate nunc ultrices vitae. Curabitur enim quam, luctus vitae fermentum in, vehicula eu eros. Donec ullamcorper, sem feugiat convallis interdum, ligula lacus aliquam lectus, a accumsan elit mauris eget mi. Suspendisse potenti. Duis pellentesque auctor arcu, at scelerisque ipsum convallis ac. Quisque dapibus congue nibh sit amet tempus. Etiam risus quam, accumsan eu arcu ac, sodales ultrices eros.",
             "link" : "",
             "iconType" : "fas",
-            "icon" : "fa-cogs"
+            "icon" : "fa-cogs",
+            "image" : "assets/images/VEX.jpg"
         },
         {
             "id" : "java",
@@ -118,10 +121,11 @@
             "name" : "JAVA at a Glance",
             "time" : "2019-2020",
             "education" : false,
-            "info" : "",
+            "info" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet vehicula sem, et iaculis sapien. Curabitur erat orci, tincidunt at sapien eget, consectetur laoreet diam. Integer et dolor vel lorem porttitor aliquam vitae et lorem. Sed est metus, mattis sed sem accumsan, consequat mattis purus. Fusce non tellus eros. Cras non viverra tortor, vel hendrerit lacus. In sit amet viverra lorem. Donec vulputate enim eu dui tincidunt ornare. Donec velit elit, molestie a efficitur ut, vulputate ac massa. Nunc ornare lectus mi, nec vulputate nunc ultrices vitae. Curabitur enim quam, luctus vitae fermentum in, vehicula eu eros. Donec ullamcorper, sem feugiat convallis interdum, ligula lacus aliquam lectus, a accumsan elit mauris eget mi. Suspendisse potenti. Duis pellentesque auctor arcu, at scelerisque ipsum convallis ac. Quisque dapibus congue nibh sit amet tempus. Etiam risus quam, accumsan eu arcu ac, sodales ultrices eros.",
             "link" : "",
             "iconType" : "fas",
-            "icon" : "fa-code"
+            "icon" : "fa-code",
+            "image" : "assets/images/Carleton.jpg"
         },
         {
             "id" : "skating",
@@ -130,10 +134,11 @@
             "name" : "Program Organizer/Coordinator",
             "time" : "2019-2020",
             "education" : false,
-            "info" : "",
+            "info" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet vehicula sem, et iaculis sapien. Curabitur erat orci, tincidunt at sapien eget, consectetur laoreet diam. Integer et dolor vel lorem porttitor aliquam vitae et lorem. Sed est metus, mattis sed sem accumsan, consequat mattis purus. Fusce non tellus eros. Cras non viverra tortor, vel hendrerit lacus. In sit amet viverra lorem. Donec vulputate enim eu dui tincidunt ornare. Donec velit elit, molestie a efficitur ut, vulputate ac massa. Nunc ornare lectus mi, nec vulputate nunc ultrices vitae. Curabitur enim quam, luctus vitae fermentum in, vehicula eu eros. Donec ullamcorper, sem feugiat convallis interdum, ligula lacus aliquam lectus, a accumsan elit mauris eget mi. Suspendisse potenti. Duis pellentesque auctor arcu, at scelerisque ipsum convallis ac. Quisque dapibus congue nibh sit amet tempus. Etiam risus quam, accumsan eu arcu ac, sodales ultrices eros.",
             "link" : "",
             "iconType" : "fas",
-            "icon" : "fa-briefcase"
+            "icon" : "fa-briefcase",
+            "image" : "assets/images/CityofOttawa.jpg"
         }
     ],
     "allSkills" : [

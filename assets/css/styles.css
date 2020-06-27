@@ -414,6 +414,92 @@ button, button:focus, button:active{
     padding-right: 10px;
 }
 
+/* Modals */
+.modal .modal-dialog {
+    margin: 2rem;
+    max-width: 100vw;
+    overflow: hidden;
+}
+.modal .modal-content {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #1E1C37;
+    border: white 2px solid;
+    border-radius: 10px;
+    height: 90vh;
+}
+.modal-content button{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    transition: linear 0.2s;
+}
+.modal-content button .fa-times{
+    color: white;
+    font-size: 49px;
+}
+.modal-content .modal-header{
+    border: none;
+    margin-bottom: 20px;
+}
+.modal-content h3{
+    color: white;
+}
+.modal-content p{
+    color: white;
+    font-size: 18px;
+}
+.modal-content span{
+    color: #F7861A;
+}
+.modal-content .modal-body{
+    align-items: center;
+}
+.modal-body .picture{
+    margin-bottom: 50px;
+}
+.modal-body .img-outline{
+    width: 90%;
+    height: 350px;
+    border: #F7861A 2px solid;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    margin: auto;
+    transition: linear 0.2s;
+}
+.modal-body .img-placeholder{
+    width: 90%;
+    height: 350px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.modal-body .img-placeholder img{
+    border-radius: 5px;
+    position: relative;
+    width: 100%;
+}
+.modal-body .img-placeholder div{
+    background: rgba(247, 133, 26, 0.3);
+    border: rgb(247,134,26, 0.3) 1px solid;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    height: 350px;
+    transition: linear 0.2s;
+    position: absolute;
+    top: 0;
+}
+.modal-body .img-placeholder div:hover{
+    background: transparent;
+    border: none;
+}
+.modal-body .description p{
+    font-size: 16px;
+}
+
 /* Skills */
 #skills{
     min-height: 100vh;

@@ -145,6 +145,8 @@ for(i in jsonData.experiences){
         button.type = "button";
         button.innerHTML = "More info";
         button.id = jsonData.experiences[i].id;
+        button.setAttribute("data-toggle", "modal");
+        button.setAttribute("data-target", "#" + jsonData.experiences[i].id + "-modal");
         description.appendChild(organization);
         description.appendChild(exp_location);
         description.appendChild(exp_name);
@@ -188,6 +190,106 @@ for (let i = 0; i < jsonData.experiences.length; i++) {
     }
 }
 
+//Modals
+const body = document.querySelector("body");
+for(i in jsonData.experiences){
+    if (jsonData.experiences[i].education != true){
+        var modal = document.createElement("div");
+        modal.classList.add("modal", "fade");
+        modal.id = jsonData.experiences[i].id + "-modal";
+        modal.setAttribute("tabindex", "-1");
+        modal.setAttribute("role", "dialog");
+        modal.setAttribute("aria-labelledby", jsonData.experiences[i].id + "Label");
+        modal.setAttribute("aria-hidden", "true");
+
+        var modalDialog = document.createElement("div");
+        modalDialog.classList.add("modal-dialog");
+        modalDialog.setAttribute("role", "document");
+
+        var modalContent = document.createElement("div");
+        modalContent.classList.add("modal-content");
+
+        var modalContainer = document.createElement("div");
+        modalContainer.classList.add("container");
+
+        var closeBtn = document.createElement("button");
+        closeBtn.classList.add("close");
+        closeBtn.setAttribute("type", "button");
+        closeBtn.setAttribute("data-dismiss", "modal");
+        closeBtn.setAttribute("aria-label", "Close");
+        var faTimes = document.createElement("i");
+        faTimes.classList.add("fa", "fa-times");
+        faTimes.setAttribute("aria-hidden", "true");
+        closeBtn.appendChild(faTimes);
+        modalContainer.appendChild(closeBtn);
+
+        var modalHeader = document.createElement("div");
+        modalHeader.classList.add("modal-header", "row");
+        var title = document.createElement("h3");
+        title.classList.add("col-12");
+        title.innerHTML = jsonData.experiences[i].name;
+        modalHeader.appendChild(title);
+        var organization = document.createElement("p");
+        organization.classList.add("col-6", "text-right");
+        organization.innerHTML = "<span>Organization: </span>" + jsonData.experiences[i].organization;
+        modalHeader.appendChild(organization);
+        var loc = document.createElement("p");
+        loc.classList.add("col-6", "text-left");
+        loc.innerHTML = "<span>Location: </span>" + jsonData.experiences[i].location;
+        modalHeader.appendChild(loc);
+        modalContainer.appendChild(modalHeader);
+
+        var modalBody = document.createElement("div");
+        modalBody.classList.add("modal-body", "row");
+        var picture = document.createElement("div");
+        picture.classList.add("picture", "col-lg-6", "p-0");
+        var imgOut = document.createElement("div");
+        imgOut.classList.add("img-outline");
+        imgOut.id = jsonData.experiences[i].id + "-img-outline";
+        picture.appendChild(imgOut);
+        var img = document.createElement("div");
+        img.classList.add("img-placeholder");
+        img.id = jsonData.experiences[i].id + "-img-placeholder";
+        var imgLink = document.createElement("img");
+        imgLink.src = jsonData.experiences[i].image;
+        img.appendChild(imgLink);
+        var shader = document.createElement("div");
+        img.appendChild(shader);
+        picture.appendChild(img);
+        modalBody.appendChild(picture);
+
+        var descriptionWrapper = document.createElement("div");
+        descriptionWrapper.classList.add("description", "col-lg-6", "p-0");
+        var description = document.createElement("p");
+        description.innerHTML = jsonData.experiences[i].info;
+        descriptionWrapper.appendChild(description);
+        modalBody.appendChild(descriptionWrapper);
+
+        modalContainer.appendChild(modalBody);
+        modalContent.appendChild(modalContainer);
+        modalDialog.appendChild(modalContent);
+        modal.appendChild(modalDialog);
+        body.appendChild(modal);
+    }
+}
+
+//Modal Images
+for (let i = 0; i < jsonData.experiences.length; i++) {
+    if (jsonData.experiences[i].education != true){
+        const imgOutline = document.getElementById(jsonData.experiences[i].id + "-img-outline")
+        const modalImg = document.getElementById(jsonData.experiences[i].id + "-img-placeholder");
+        modalImg.addEventListener("mouseover", function(){
+            imgOutline.style.left = "-10px";
+            imgOutline.style.top = "10px";
+        })
+        modalImg.addEventListener("mouseout", function(){
+            imgOutline.style.left = "-20px";
+            imgOutline.style.top = "20px";
+        })
+    }
+}
+
+
 //Skills
 const skills = document.querySelector(".skills-wrapper");
 var accordion = document.createElement("div");
@@ -211,9 +313,6 @@ for(i in jsonData.allSkills){
 
     var catName = document.createElement("h5");
     catName.classList.add("d-inline");
-    var headNumber = document.createElement("span");
-    headNumber.innerHTML = "01. ";
-    catName.appendChild(headNumber);
     catName.innerHTML = "<span>0" + (parseInt(i, 10)+1) + ". </span>" + jsonData.allSkills[i].catagory;
     var downArrow = document.createElement("i");
     downArrow.classList.add("fas", "fa-chevron-down", "d-inline");
