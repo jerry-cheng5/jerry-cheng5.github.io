@@ -161,8 +161,7 @@ button, button:focus, button:active{
     color: #C3C2E1;
 }
 #home-blurb{
-    width: 450px;
-    margin: 45px 0;
+    margin: 3rem 0;
     line-height: 23px;
     font-size: 1.1rem !important;
     color: #A9A9C9;
@@ -183,36 +182,37 @@ button, button:focus, button:active{
 }
 
 /* Socials Bar */
-#socials-bar{
-    position: absolute;
-    padding-left: 80px;
-    z-index: 1001;
-    bottom: 0;
-}
-#socials-bar ul{
-    padding: 0;
-    margin: 0;
-}
-#socials-bar ul li{
-    padding: 10px 0;
-    text-align: center;
-}
-#socials-bar .fab, .far{
-    color: white;
-    font-size: 24px;
-}
-#socials-bar .vertical-line{
-    border-left: 2px solid white;
-    height: 132px;
-    position: relative;
-    left: 50%;
-    margin-left: -1px;
-    margin-top: 10px;
-}
-@media (max-width: 1199.98px) {
+@media (min-width: 1199.98px) {
     #socials-bar{
-        display: none;
+        display: block !important;
+        position: absolute;
+        padding-left: 80px;
+        z-index: 1001;
+        bottom: 0;
     }
+    #socials-bar ul{
+        padding: 0;
+        margin: 0;
+    }
+    #socials-bar ul li{
+        padding: 10px 0;
+        text-align: center;
+    }
+    #socials-bar .fab, .far{
+        color: white;
+        font-size: 24px;
+    }
+    #socials-bar .vertical-line{
+        border-left: 2px solid white;
+        height: 132px;
+        position: relative;
+        left: 50%;
+        margin-left: -1px;
+        margin-top: 10px;
+    }
+}
+#socials-bar{
+    display: none;
 }
 
 /* About Me */
@@ -264,7 +264,7 @@ button, button:focus, button:active{
 }
 #experiences .container{
     width: 100%;
-    padding: 200px 0;
+    padding: 12.5rem 0;
     text-align: right;
     position: relative;
 }
@@ -289,8 +289,8 @@ button, button:focus, button:active{
     float: left;
     z-index: 10;
     color: white;
-    width: 550px;
-    margin-top: -170px;
+    width: 34.375rem;
+    margin-top: -10.5rem;
 }
 #experiences .vertical-line{
     position: absolute;
