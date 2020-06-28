@@ -187,6 +187,13 @@ for (let i = 0; i < jsonData.experiences.length; i++) {
                 coursesBtn.innerHTML = "Show Courses";
             }   
         })
+        coursesBtn.addEventListener("blur", function() {
+            console.log("lol");
+            if (popout.classList.contains("pop-active")){
+                coursesBtn.innerHTML = "Show Courses";
+                popout.classList.remove("pop-active");
+            }
+        })
     }
 }
 
@@ -242,7 +249,7 @@ for(i in jsonData.experiences){
         var modalBody = document.createElement("div");
         modalBody.classList.add("modal-body", "row");
         var picture = document.createElement("div");
-        picture.classList.add("picture", "col-lg-6", "p-0");
+        picture.classList.add("picture", "col-lg-6");
         var imgOut = document.createElement("div");
         imgOut.classList.add("img-outline");
         imgOut.id = jsonData.experiences[i].id + "-img-outline";
@@ -259,7 +266,7 @@ for(i in jsonData.experiences){
         modalBody.appendChild(picture);
 
         var descriptionWrapper = document.createElement("div");
-        descriptionWrapper.classList.add("description", "col-lg-6", "p-0");
+        descriptionWrapper.classList.add("description", "col-lg-5", "p-0");
         var description = document.createElement("p");
         description.innerHTML = jsonData.experiences[i].info;
         descriptionWrapper.appendChild(description);

@@ -38,15 +38,20 @@ h3{
 h4{
     font-family: 'Roboto', sans-serif;
     font-weight: 300 !important;
-    font-size: 16px !important;
+    font-size: 1rem !important;
     color: #A9A9C9;
     margin-bottom: 5px !important;
 }
 h5{
     font-family: 'Roboto', sans-serif;
     font-weight: 300 !important;
-    font-size: 18px !important;
+    font-size: 1.1rem !important;
     color: white;
+}
+@media (max-width: 767.98px){
+    h5{
+        font-size: 1rem !important;
+    }
 }
 p{
     font-family: 'Roboto', sans-serif;
@@ -74,11 +79,18 @@ button, button:focus, button:active{
     margin: -8rem 0 0 1.8rem;
     width: fit-content;
 }
+@media (max-width: 767.98px) {
+    .big-number-left{
+        position: relative;
+        margin: -8rem 0 0 0;
+        width: fit-content;
+    }
+}
 
 /* Navbar */
 #navbar{
     background-color: #1D1C36;
-    padding: 1.5rem 4.5rem;
+    padding: 1.5rem 5%;
     white-space: nowrap;
     transition: 0.4s;
     box-shadow: 0px 10px 30px -10px rgba(17, 16, 41, 0.5);
@@ -142,10 +154,11 @@ button, button:focus, button:active{
     height: 100vh;
     background-color: #1D1C36;
     position: relative;
+    overflow: hidden;
 }
 #home .container{
     width: 100%;
-    padding: 15.5rem 0 0 3rem;
+    padding: 15.5rem 3rem;
 }
 #home h1{
     font-weight: 300;
@@ -159,6 +172,7 @@ button, button:focus, button:active{
     font-size: 3.5rem !important;
     font-weight: 400 !important;
     color: #C3C2E1;
+    margin: 0;
 }
 #home-blurb{
     margin: 3rem 0;
@@ -179,6 +193,28 @@ button, button:focus, button:active{
 #resume-btn:hover{
     background-color: #f7851a1a;
     transition: all linear 0.2s;
+}
+@media (max-width: 767.98px) {
+    #home .container{
+        width: 100%;
+        padding: 15.5rem 2rem;
+    }
+    #home-name{
+        font-size: 3rem !important;
+        font-weight: 400 !important;
+        color: white;
+    }
+    #home-description{
+        font-size: 2.5rem !important;
+        font-weight: 400 !important;
+        color: #C3C2E1;
+    }
+    #home-blurb{
+        margin: 2.5rem 0;
+        line-height: 23px;
+        font-size: 1.1rem !important;
+        color: #A9A9C9;
+    }
 }
 
 /* Socials Bar */
@@ -219,6 +255,7 @@ button, button:focus, button:active{
 #about{
     height: 100vh;
     background-color: white;
+    overflow: hidden;
 }
 #about .container{
     width: 100%;
@@ -239,7 +276,7 @@ button, button:focus, button:active{
     font-weight: 400;
     font-size: 1.5rem;
     margin-top: -10.5rem;
-    width: auto;
+    width: 70%;
 }
 #about .container p::selection{
     background: #fcc28d;
@@ -256,10 +293,38 @@ button, button:focus, button:active{
         display: none;
     }
 }
+<<<<<<< Updated upstream
+=======
+@media (max-width: 767.98px) {
+    #about .container{
+        width: 100%;
+        padding: 12rem 2rem;
+    }
+    #about .container h1{
+        position: relative;
+        z-index: 1;
+        font-weight: 200;
+        letter-spacing: 5px;
+    }
+    #about .container h2{
+        color: #DFDFE3;
+    }
+    #about .container p{
+        position: relative;
+        z-index: 1;
+        font-weight: 400;
+        font-size: 1.2rem;
+        margin-top: -10.5rem;
+        width: auto;
+    }
+}
+>>>>>>> Stashed changes
 
 /* Experiences */
 #experiences{
     background-color: #1E1C37;
+    min-height: 100vh;
+    overflow: hidden;
 }
 #experiences .container{
     width: 100%;
@@ -288,7 +353,7 @@ button, button:focus, button:active{
     float: left;
     z-index: 10;
     color: white;
-    width: 34.375rem;
+    width: 34.4rem;
     margin-top: -10.5rem;
 }
 #experiences .vertical-line{
@@ -312,13 +377,13 @@ button, button:focus, button:active{
 .emblem{
     position: relative;
     left: 50%;
-    color: white;
     font-size: 32px;
     width: min-content;
     top: 135px;
     z-index: 4;
 }
 .fa-square-full{
+    color: white;
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -335,18 +400,82 @@ button, button:focus, button:active{
     z-index: 3;
 }
 
+@media (max-width: 1199.98px) {
+    #experiences .container{
+        width: 100%;
+        padding: 12rem 2rem;
+        text-align: right;
+        position: relative;
+    }
+    #experiences .container .section-title{
+        text-align: left;
+        z-index: 10;
+    }
+    #experiences .container h1{
+        position: relative;
+        z-index: 1;
+        font-weight: 200;
+        letter-spacing: 5px;
+    }
+    #experiences .container h2{
+        color: #3D3A5A;
+        z-index: 9;
+        text-align: left;
+    }
+    #experiences .container h3{
+        text-align: left;
+        position: relative;
+        float: left;
+        z-index: 10;
+        color: white;
+        width: auto;
+        margin-top: -10.5rem;
+        font-size: 2.5rem !important;
+    }
+    #experiences .vertical-line{
+        position: absolute;
+        top: 18%;
+        border-left: 2px solid white;
+        left: 50%;
+        z-index: 4;
+        height: 77%;
+    }
+    .timeline-arrow{
+        position: absolute;
+        left: 50%;
+        color: white;
+        font-size: 25px;
+        width: min-content;
+        bottom: 5%;
+        z-index: 4;
+        margin: 0 0 -15px -10px;
+    }
+    .emblem{
+        display: none;
+    }
+    .left-side{
+        background-color: #1E1C37;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        z-index: 3;
+    }
+}
+
 /* Education Cards */
 .education{
     position: relative;
     align-items: center;
-    padding: 25px 0;
+    padding: 2rem 0;
 }
 .ed-emblem{
     text-align: center;
     z-index: 4;
 }
 .ed-emblem .fas{
-    font-size: 32px;
+    font-size: 2rem;
     color: #1E1C37;
     background-color: #1E1C37;
     -webkit-text-stroke-width: 2px;
@@ -360,19 +489,19 @@ button, button:focus, button:active{
     z-index: 4;
 }
 .education h1{
-    font-size: 24px !important;
+    font-size: 1.5rem !important;
     font-weight: 400 !important;
     letter-spacing: 0px !important;
     margin-bottom: 5px;
 }
 .education button{
-    height: 45px;
-    width: 135px;
+    height: 3rem;
+    width: 8rem;
     border-radius: 5px;
     border: 2px solid white;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     background-color: transparent;
 }
 .education button:hover{
@@ -385,19 +514,39 @@ button, button:focus, button:active{
 .experience .description{
     z-index: 0;
 }
+@media (max-width: 767.98px){
+    .ed-emblem{
+        text-align: center;
+        z-index: 4;
+        padding: 0 !important;
+    }
+    .education .time{
+        position: relative;
+        z-index: 3;
+    }
+    .education h1{
+        font-size: 1.2rem !important;
+        font-weight: 400 !important;
+        letter-spacing: 0px !important;
+        margin-bottom: 5px;
+    }
+}
 
+/* Popouts */
 .popout{
-    width: 300px;
+    width: 18.75rem;
     position: absolute;
     text-align: left;
     z-index: 2;
     border: white 2px solid;
     border-radius: 10px;
     background-color: #1E1C37;
-    transition: 0.5s;
+    transition: all 0.5s;
+    visibility: hidden;
 }
 .pop-active{
-    transform: translateX(630px);
+    transform: translateX(39rem);
+    visibility: visible;
 }
 .popout h1{
     color: white;
@@ -412,7 +561,7 @@ button, button:focus, button:active{
 .popout .courses-header{
     margin: 0;
     width: 100%;
-    height: 60px;
+    height: 3.75rem;
     border-bottom: white 2px solid;
     align-items: center;
     text-align: center
@@ -421,12 +570,12 @@ button, button:focus, button:active{
     margin: 0;
 }
 .courses{
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 .courses ul{
     list-style: none;
     margin: 0;
-    padding: 0 30px;
+    padding: 0 2rem;
 }
 .courses ul li p::before {
     content: "\2022";
@@ -438,7 +587,29 @@ button, button:focus, button:active{
 }
 .average{
     float: right;
-    padding-right: 10px;
+    padding-right: 1rem;
+}
+@media (max-width: 1199.98px) {
+    .pop-active{
+        transform: translateX(30rem);
+        visibility: visible;
+    }
+}
+@media (max-width: 991.98px){
+    .pop-active{
+        transform: translateX(23rem);
+        visibility: visible;
+    }
+}
+@media (max-width: 767.98px){
+    .popout{
+        transition: 0s;
+    }
+    .pop-active{
+        transform: translateX(0);
+        z-index: 1050;
+        visibility: visible;
+    }
 }
 
 /* Modals */
@@ -448,7 +619,7 @@ button, button:focus, button:active{
     overflow: hidden;
 }
 .modal .modal-content {
-    padding: 50px 0;
+    padding: 5rem 0;
     text-align: center;
     background-color: #1E1C37;
     border: white 2px solid;
@@ -467,14 +638,14 @@ button, button:focus, button:active{
 }
 .modal-content .modal-header{
     border: none;
-    margin-bottom: 20px;
+    margin-bottom: 1.2rem;
 }
 .modal-content h3{
     color: white;
 }
 .modal-content p{
     color: white;
-    font-size: 18px;
+    font-size: 1.1rem;
     text-align: left;
 }
 .modal-content span{
@@ -484,11 +655,12 @@ button, button:focus, button:active{
     align-items: center;
 }
 .modal-body .picture{
-    margin-bottom: 50px;
+    padding: 0;
+    margin: 0 4rem 0 0;
 }
 .modal-body .img-outline{
-    width: 90%;
-    height: 350px;
+    width: 100%;
+    height: 22rem;
     border: #F7861A 2px solid;
     border-radius: 5px;
     position: absolute;
@@ -498,16 +670,18 @@ button, button:focus, button:active{
     transition: linear 0.2s;
 }
 .modal-body .img-placeholder{
-    width: 90%;
-    height: 350px;
+    width: 100%;
+    height: 22rem;
     padding: 0;
     margin: 0;
     position: relative;
+    overflow: hidden;
 }
 .modal-body .img-placeholder img{
     border-radius: 5px;
     position: relative;
     width: 100%;
+    height: 100%;
 }
 .modal-body .img-placeholder div{
     background: rgba(247, 133, 26, 0.3);
@@ -515,7 +689,7 @@ button, button:focus, button:active{
     border-radius: 5px;
     overflow: hidden;
     width: 100%;
-    height: 350px;
+    height: 22rem;
     transition: linear 0.2s;
     position: absolute;
     top: 0;
@@ -525,7 +699,75 @@ button, button:focus, button:active{
     border: none;
 }
 .modal-body .description p{
-    font-size: 16px;
+    font-size: 1rem;
+}
+@media (max-width: 1199.98px){
+    .modal-content .modal-body{
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+    .modal-body .picture{
+        padding: 0;
+        margin: 0 2rem 0 0;
+    }
+}
+@media (max-width: 991.98px){
+    .modal-content button .fa-times{
+        font-size: 2rem;
+    }
+    .modal-content .modal-header{
+        margin-bottom: 0;
+    }
+    .modal-content h3{
+        font-size: 2rem !important;
+    }
+    .modal-content .modal-body{
+        padding: 1rem 5rem;
+    }
+    .modal-body .picture{
+        padding: 0;
+        margin: auto;
+        margin-bottom: 3rem;
+        width: 50%;
+    }
+    .modal-body .img-outline{
+        width: 100%;
+        height: 12rem;
+    }
+    .modal-body .img-placeholder{
+        width: 100%;
+        height: auto;
+    }
+    .modal-body .img-placeholder div{
+        height: 100%;
+    }
+    .modal-body .description p{
+        text-align: center;
+    }
+}
+@media (max-width: 767.98px){
+    .modal-content button{
+        top: 2rem;
+        right: 2rem;
+    }
+    .modal-content button .fa-times{
+        font-size: 1.5rem;
+    }
+    .modal-content h3{
+        font-size: 1.8rem !important;
+    }
+    .modal-content p{
+        font-size: 1rem;
+    }
+    .modal-content .modal-body{
+        padding: 1rem 1rem;
+    }
+    .modal-body .picture{
+        display: none;
+    }
+    .modal-body .description p{
+        font-size: 1rem;
+    }
 }
 
 /* Skills */
