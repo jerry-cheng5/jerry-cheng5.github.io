@@ -399,65 +399,22 @@ button, button:focus, button:active{
 
 @media (max-width: 1199.98px) {
     #experiences .container{
-        width: 100%;
         padding: 12rem 2rem;
-        text-align: right;
-        position: relative;
-    }
-    #experiences .container .section-title{
-        text-align: left;
-        z-index: 10;
-    }
-    #experiences .container h1{
-        position: relative;
-        z-index: 1;
-        font-weight: 200;
-        letter-spacing: 5px;
-    }
-    #experiences .container h2{
-        color: #3D3A5A;
-        z-index: 9;
-        text-align: left;
     }
     #experiences .container h3{
-        text-align: left;
-        position: relative;
-        float: left;
-        z-index: 10;
-        color: white;
         width: auto;
-        margin-top: -10.5rem;
         font-size: 2.5rem !important;
     }
     #experiences .vertical-line{
-        position: absolute;
         top: 18%;
-        border-left: 2px solid white;
-        left: 50%;
         z-index: 4;
         height: 77%;
-    }
-    .timeline-arrow{
-        position: absolute;
-        left: 50%;
-        color: white;
-        font-size: 25px;
-        width: min-content;
-        bottom: 5%;
-        z-index: 4;
-        margin: 0 0 -15px -10px;
     }
     .emblem{
         display: none;
     }
     .left-side{
-        background-color: #1E1C37;
-        position: absolute;
-        top: 0;
         left: 0;
-        width: 50%;
-        height: 100%;
-        z-index: 3;
     }
 }
 
@@ -526,6 +483,9 @@ button, button:focus, button:active{
         font-weight: 400 !important;
         letter-spacing: 0px !important;
         margin-bottom: 5px;
+    }
+    .education button{
+        font-size: 0.9rem;
     }
 }
 
@@ -771,10 +731,11 @@ button, button:focus, button:active{
 #skills{
     min-height: 100vh;
     background-color: #0A0913;
+    overflow: hidden;
 }
 #skills .container{
     width: 100%;
-    padding: 200px 50px;
+    padding: 12.5rem 3rem 8rem 3rem;
 }
 #skills .container h1{
     position: relative;
@@ -792,11 +753,11 @@ button, button:focus, button:active{
     float: left;
     z-index: 1;
     color: white;
-    margin-top: -170px;
-    width: 400px;
+    margin-top: -10.5rem;
+    width: 25rem;
 }
 .skill-cat{
-    margin: 20px 0;
+    margin: 1.2rem 0;
 }
 .skill-header button{
     width: 100%;
@@ -821,7 +782,7 @@ button, button:focus, button:active{
 }
 .skill-header button h5{
     font-family: 'Roboto', sans-serif !important;
-    font-size: 36px !important;
+    font-size: 2.25rem !important;
     font-weight: 300 !important;
     float: left;
     margin: auto;
@@ -830,10 +791,10 @@ button, button:focus, button:active{
     color: #F7861A;
 }
 .skill-header button i{
-    font-size: 18px;
+    font-size: 1.1rem;
     color: white;
     float: right;
-    margin: 12px 0;
+    margin: 0.75rem 0;
     transform: rotate(180deg);
     transition: all 0.2s ease-in;
 }
@@ -843,23 +804,42 @@ button, button:focus, button:active{
   }
 
 .skill-body{
-    padding: 25px 0 25px 75px;
+    padding: 1.5rem 0 1.5rem 4.5rem;
 }
 .skill-body p{
     color: white;
-    font-size: 16px;
-    font-weight: 300px;
+    font-size: 1rem;
+    font-weight: 300;
     letter-spacing: 2px;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 .skill{
-    margin-bottom: 20px;
+    margin-bottom: 1.2rem;
 }
 .skill .progress{
-    height: 5px;
+    height: 0.3rem;
 }
 .skill .progress .progress-bar{
     background-color: #F7861A;
+}
+@media (max-width: 1199.98px){
+    .skill-header button h5{
+        font-size: 2rem !important;
+    }
+}
+@media (max-width: 767.98px){
+    #skills .container h3{
+        font-size: 2.5rem !important;
+    }
+    .skill-header button h5{
+        font-size: 1.25rem !important;
+    }
+    .skill-header button i{
+        margin: 0.2rem 0;
+    }
+    .skill-body{
+        padding: 1.5rem 0 1.5rem 1rem;
+    }
 }
 
 /* Portfolio */
