@@ -293,8 +293,6 @@ button, button:focus, button:active{
         display: none;
     }
 }
-<<<<<<< Updated upstream
-=======
 @media (max-width: 767.98px) {
     #about .container{
         width: 100%;
@@ -318,7 +316,6 @@ button, button:focus, button:active{
         width: auto;
     }
 }
->>>>>>> Stashed changes
 
 /* Experiences */
 #experiences{
