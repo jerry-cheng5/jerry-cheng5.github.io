@@ -188,7 +188,6 @@ for (let i = 0; i < jsonData.experiences.length; i++) {
             }   
         })
         coursesBtn.addEventListener("blur", function() {
-            console.log("lol");
             if (popout.classList.contains("pop-active")){
                 coursesBtn.innerHTML = "Show Courses";
                 popout.classList.remove("pop-active");

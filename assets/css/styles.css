@@ -247,7 +247,7 @@ button, button:focus, button:active{
 }
 @media (max-width: 1199.98px) {
     #socials-bar{
-        display: none;
+        display: none !important;
     }
 }
 
@@ -290,7 +290,7 @@ button, button:focus, button:active{
 }
 @media (max-width: 1199.98px) {
     #about .vertical-line{
-        display: none;
+        display: none !important;
     }
 }
 @media (max-width: 767.98px) {
