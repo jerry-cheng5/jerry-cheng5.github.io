@@ -1,0 +1,299 @@
+{
+    "experiences" : [
+        {
+            "id" : "grade-nine",
+            "organization" : "Colonel By SS",
+            "location" : "Gloucester, Canada",
+            "name" : "Grade 9 Pre-IB",
+            "time" : "2016-2017",
+            "education" : true,
+            "courses" : [
+                "English",
+                "Math",
+                "Science",
+                "French",
+                "Geography",
+                "Health & PE",
+                "Music",
+                "Exploring Technologies",
+                "Music Repertoire"
+            ],
+            "average" : "91%"
+        },
+        {
+            "id" : "grade-ten",
+            "organization" : "Colonel By SS",
+            "location" : "Gloucester, Canada",
+            "name" : "Grade 10 Pre-IB",
+            "time" : "2017-2018",
+            "education" : true,
+            "courses" : [
+                "English",
+                "Math",
+                "Science",
+                "French",
+                "History",
+                "Introduction to Computer Science",
+                "Health & PE",
+                "Introduction to Business"
+            ],
+            "average" : "90%"
+        },
+        {
+            "id" : "grade-eleven",
+            "organization" : "Colonel By SS",
+            "location" : "Gloucester, Canada",
+            "name" : "Grade 11 IB1",
+            "time" : "2018-2019",
+            "education" : true,
+            "courses" : [
+                "English (IB1)",
+                "Math (IB1)",
+                "Canadian Law",
+                "French (IB1)",
+                "Theory of Knowledge (IB1)",
+                "Chemistry (IB1)",
+                "Physics (IB1)",
+                "Information Technology in a Global Society (IB1)"
+            ],
+            "average" : "94%"
+        },
+        {
+            "id" : "alp",
+            "organization" : "City of Ottawa",
+            "location" : "Ottawa, Canada",
+            "name" : "Advanced Leadership Program",
+            "time" : "2019",
+            "education" : false,
+            "info" : "In the summer of 2019, I attended the Advanced Leadership Program offered by the City of Ottawa. In this 3 week program I learned many leadership styles and techniques and constantly applied them in real world experiences. This included summer camps, field trips, and more.<br><br>I was also certified in First Aid & CPR, AODA, CORE, SunSense, HighFive, and more. This program allowed me to practice and hone my leadership skills, teamwork skills, problem solving skills, adaptability, and my ability to stay calm and work under pressure.",
+            "link" : "",
+            "iconType" : "fas",
+            "icon" : "fa-users",
+            "image" : "assets/images/CityofOttawa.jpg"
+        },
+        {
+            "id" : "odba",
+            "organization" : "Ottawa District Badminton Association",
+            "location" : "Petawawa, Canada",
+            "name" : "ODBA Tournament Organizer",
+            "time" : "2019",
+            "education" : false,
+            "info" : "During the last couple of months of 2019, I took on the responsibility of organizing an ODBA ranking tournament in Petawawa, Ontario. We organized and ran the entire tournament, with the help of volunteers from my badminton academy–Soong Badminton Academy.<br><br>I was mainly in charge of operating the Tournament Software, managing data, and making sure the data was correct at all times. I also monitored the tournament email for the countless emails from parents and players that needed help registering. In the end we had over 100 entries in 11 different events, including Singles, Doubles and Mixed for ages 13-18. This was my first introduction to simple databases and I taught myself how to read, modify, and understand the data.",
+            "link" : "",
+            "iconType" : "fas",
+            "icon" : "fa-clipboard",
+            "image" : "assets/images/ODBA.jpg"
+        },
+        {
+            "id" : "grade-twelve",
+            "organization" : "Colonel By SS",
+            "location" : "Gloucester, Canada",
+            "name" : "Grade 12 IB2",
+            "time" : "2019-2020",
+            "education" : true,
+            "courses" : [
+                "English (IB2 HL)",
+                "Math (IB2 SL)",
+                "French (IB2 SL)",
+                "Chemistry (IB1 HL)",
+                "Physics (IB1 HL)",
+                "Mathematics of Data Management"
+            ],
+            "average" : "96%"
+        },
+        {
+            "id" : "vex",
+            "organization" : "VEX 930",
+            "location" : "Ottawa, Canada",
+            "name" : "VEX Robotics",
+            "time" : "2019-2020",
+            "education" : false,
+            "info" : "During April of 2019, a few classmates and I decided to form a group to compete in the upcoming 2019-2020 VEX Robotics competitions. The 2019-2020 game was called “Tower Takeover”, where the objective was to use your robot to stack the tallest tower in a certain amount of time. The blocks were scattered in a 12ft by 12ft field, where two alliances composed of two robots would compete.<br><br>We designed, built, programmed, and tested the robot throughout the entire season, competing in many local tournaments. We used PROS and C++ to code the robot, including the autonomous features. At the end of the season, we qualified for provincials and placed in the top 20 at the provincial tournament.",
+            "link" : "",
+            "iconType" : "fas",
+            "icon" : "fa-cogs",
+            "image" : "assets/images/VEX.jpg"
+        },
+        {
+            "id" : "java",
+            "organization" : "Carleton University",
+            "location" : "Ottawa, Canada",
+            "name" : "JAVA at a Glance",
+            "time" : "2019-2020",
+            "education" : false,
+            "info" : "During the 2019-2020 school year, I enrolled in the Java at a glance course at Carleton University. This weekly course was taught by Carleton Professor Alexey Godin. We learned many concepts in not only the realm of Java, but also computing, graphics, threading, and more. We made many small programs such as a program that prints the calendar of any year. This can be viewed on my GitHub.<br><br>Unfortunately, this course was cut short by the COVID-19 Pandemic in 2020, however I still learned many valuable concepts and I was able to speak one-on-one with Professor Godin almost every lesson, as our class was under 20 people.",
+            "link" : "",
+            "iconType" : "fas",
+            "icon" : "fa-code",
+            "image" : "assets/images/Carleton.jpg"
+        },
+        {
+            "id" : "skating",
+            "organization" : "City of Ottawa",
+            "location" : "Manotick, Canada",
+            "name" : "Program Organizer/Coordinator",
+            "time" : "2019-2020",
+            "education" : false,
+            "info" : "During the 2019-2020 school year, I worked weekly as a Program Organizer/Coordinator for the City of Ottawa. I worked at Manotick Arena and coordinated the weekly public and family skates. I had many responsibilities such as collecting payment, enforcing the many rules set by the city, maintaining the stands/boards of the rink, and more.<br><br>This job allowed me to sharpen my leadership skills, teamwork skills, my ability to work under pressure, and my quick and efficient organizational skills.",
+            "link" : "",
+            "iconType" : "fas",
+            "icon" : "fa-briefcase",
+            "image" : "assets/images/CityofOttawa.jpg"
+        }
+    ],
+    "allSkills" : [
+        {
+            "id" : "webdev",
+            "catagory" : "Web Development",
+            "skills" : [
+                "HTML5",
+                "CSS3",
+                "JAVASCRIPT",
+                "NODE.JS",
+                "JQUERY",
+                "BOOTSTRAP"
+            ],
+            "progress" : [
+                "90",
+                "85",
+                "90",
+                "70",
+                "70",
+                "85"
+            ]
+        },
+        {
+            "id" : "progLangs",
+            "catagory" : "Programming Languages",
+            "skills" : [
+                "PYTHON",
+                "JAVA",
+                "C++"
+            ],
+            "progress" : [
+                "90",
+                "80",
+                "80"
+            ]
+        },
+        {
+            "id" : "dataCloud",
+            "catagory" : "Database / Cloud",
+            "skills" : [
+                "SQL",
+                "SQLITE",
+                "AWS",
+                "HEROKU"
+            ],
+            "progress" : [
+                "70",
+                "80",
+                "70",
+                "70"
+            ]
+        },
+        {
+            "id" : "frameworks",
+            "catagory" : "Other Frameworks",
+            "skills" : [
+                "DISCORD.PY",
+                "PROS"
+            ],
+            "progress" : [
+                "90",
+                "75"
+            ]
+        },
+        {
+            "id" : "graphic",
+            "catagory" : "Graphic Design Tools",
+            "skills" : [
+                "ADOBE PHOTOSHOP",
+                "ADOBE ILLUSTRATOR",
+                "FIGMA"
+            ],
+            "progress" : [
+                "85",
+                "80",
+                "90"
+            ]
+        },
+        {
+            "id" : "otherSkills",
+            "catagory" : "Skills",
+            "skills" : [
+                "LEADERSHIP",
+                "TEAMWORK",
+                "PROBLEM-SOLVING",
+                "WILLINGNESS TO LEARN",
+                "MOTIVATION"
+            ],
+            "progress" : [
+                "85",
+                "90",
+                "90",
+                "100",
+                "95"
+            ]
+        }
+    ],
+    "projects" :[
+        {
+            "id" : "my-website",
+            "name" : "Portfolio Website",
+            "type" : "WEB DEVELOPMENT",
+            "description" : "Since I was introduced to Web Development in grade 9, I’ve enjoyed designing and creating websites. I’ve created many small websites in my technology courses in highschool, and I decided to take everything I learned to create this website. I took the basics that I learned from school and merged them with various frameworks/libraries such as Bootstrap, Animate.css, Wow.js, JQuery, and more. I also wanted to make this website dynamic, so I also learned about JSON files and how to use them for Web Development. This website served as a practice tool to improve my web development skills as well as a portfolio for my many future projects!",
+            "used" : [
+                "HTML5",
+                "CSS3",
+                "Bootstrap",
+                "JavaScript",
+                "JQuery",
+                "Figma",
+                "Photoshop"
+            ],
+            "github" : "",
+            "externalLink" : "",
+            "projectImage" : "assets/images/portfolioWebsite.jpg",
+            "webpage" : true
+        },
+        {
+            "id" : "synergyy-web",
+            "name" : "Synergyy Website",
+            "type" : "WEB DEVELOPMENT",
+            "description" : "This is the website that my friend and I made for our Project Management discord bot–SynergyyBot. This website includes descriptions and documents about our bot as well as quick and simple guides on how to use our bot. It also has a FAQ and a reviews section which can help the users. We used the basic web development tools as well as Bootstrap, Animate.css, Wow.js, PHP forms, and more. This was another great project that allowed me to hone my web development skills as well as my graphic designing skills.",
+            "used" : [
+                "HTML5",
+                "CSS3",
+                "SCSS",
+                "Bootstrap",
+                "JavaScript",
+                "JQuery",
+                "PHP",
+                "Figma",
+                "Photoshop"
+            ],
+            "github" : "https://github.com/SynergyyBot/Synergyy-Website",
+            "externalLink" : "",
+            "projectImage" : "assets/images/SynergyyWebsite.jpg",
+            "webpage" : true
+        },
+        {
+            "id" : "synergyy-bot",
+            "name" : "Synergyy Discord Bot",
+            "type" : "AUTOMATED DISCORD BOT",
+            "description" : "Many highschools and universities have announced that for the 2020 Fall Semester, all courses will be online. This sparked the creation of SynergyyBot–A Project Management Discord Bot Built for Students. This bot includes meeting creation, RVSP, reminders, task creation, Google Calendar integration, and more. My friend and I did this by using Discord’s python API, discord.py, as well as SQLite and SQL to store data. We are also hosting this bot on AWS, so that it can be used by many discord servers. We also learned the Google Calendar API to add Google Calendar integration to our bot. We hope that this bot can help with team collaboration during the upcoming school terms.",
+            "used" : [
+                "Python 3",
+                "Discord.py",
+                "SQL and SQLite",
+                "AWS Hosting",
+                "Many smaller python libraries"
+            ],
+            "github" : "https://github.com/SynergyyBot/SynergyyBot",
+            "externalLink" : "",
+            "projectImage" : "assets/images/synergyybot.png",
+            "webpage" : false
+        }
+    ]
+}

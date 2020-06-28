@@ -8,26 +8,202 @@
         <meta name="description" content="Jerry Cheng's Portfolio">
         <meta name="keywords" content="Jerry Cheng">
         <meta name="author" content="Jerry Cheng">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="assets/images/logo.png">
       
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">      
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         
         <!-- CSS -->
-        <link href="assets/css/styles.css" rel="stylesheet">/script>
+        <link href="assets/css/styles.css" rel="stylesheet">
 
         <!-- Other Vendor CSS Files -->
-        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/animate.css/animate.css" rel="stylesheet">
         <link href="assets/vendor/fontawesome-free-5.13.1-web/css/all.css" rel="stylesheet">
         <link href="assets/vendor/WOW-master/css/libs/animate.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     </head>
     <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+            <div class="container-fluid">
+                <div class="logo float-left">
+                    <a href="#home"><img src="assets/images/logo.png" alt="Personal Logo" class="img-fluid"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+            
+                <div class="collapse navbar-collapse nav-links justify-content-end" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav">
+                        <li class="d-inline"><a href="#about"><span>01. </span>About</a></li>
+                        <li class="d-inline"><a href="#experiences"><span>02. </span>Experiences</a></li>
+                        <li class="d-inline"><a href="#skills"><span>03. </span>Skills</a></li>
+                        <li class="d-inline"><a href="#portfolio"><span>04. </span>Portfolio</a></li>
+                        <li class="d-inline"><a href="#contact"><span>05. </span>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <div class="logo float-left">
+                    <a href="#home"><img src="assets/images/logo.png" alt="Personal Logo" class="img-fluid"></a>
+                </div>
+                <div class="nav-links float-right d-block">
+                    <ul>
+                        <li class="d-inline"><a href="#about"><span>01. </span>About</a></li>
+                        <li class="d-inline"><a href="#experiences"><span>02. </span>Experiences</a></li>
+                        <li class="d-inline"><a href="#skills"><span>03. </span>Skills</a></li>
+                        <li class="d-inline"><a href="#portfolio"><span>04. </span>Portfolio</a></li>
+                        <li class="d-inline"><a href="#contact"><span>05. </span>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+
+        <!-- Arrow -->
+        <div id="corner-arrow"><a href="#about"><i id="topBtn" class="fas fa-chevron-down rotate float-right"></i></a></div>
+
+        <!-- Home -->
+        <section id="home">
+            <div class="container">
+                <div class="row p-0">
+                    <h1 class="col-12">Hi, my name is</h1>
+                    <h1 id="home-name" class="col-12">Jerry Cheng.</h1>
+                    <h1 id="home-description" class="col-12">A self-motivated computer science student.</h1>
+                    <p id="home-blurb" class="col-lg-5">I’m a recent International Baccalaureate graduate and future Computer Science student at the University of Waterloo. I enjoy learning new things and I have the motivation and dedication to do so.</p>
+                    <a href="" class="col-12"><button type="button" id="resume-btn">Resume</button></a>
+                </div>
+                
+            </div>
+            <div id="socials-bar">
+                <ul>
+                    <li class="d-block"><a href=""><i class="fab fa-github"></i></a></li>
+                    <li class="d-block"><a href=""><i class="fab fa-linkedin"></i></a></li>
+                    <li class="d-block"><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li class="d-block"><a href=""><i class="far fa-envelope"></i></a></li>
+                    <li class="d-block"><a href=""><i class="fab fa-medium-m"></i></a></li>
+                </ul>
+                <div class="vertical-line"></div>
+            </div>
+        </section>
+        
+        <!-- About Me -->
+        <section id="about">
+            <div class="vertical-line"></div>
+            <div class="container">
+                <h1>ABOUT ME</h1>
+                <h2 class="big-number-left">01</h2>
+                <p id="about-blurb">Hello! I’m Jerry Cheng, a soon-to-be first year Computer Science student at the University of Waterloo.<br><br>
+                    I’m very enthusiastic about STEM and have a passion towards computer science and software engineering. I’m a self-motivated, hard-working student that also works on personal projects on the side.<br><br>
+                    I always strive to improve my own skills and learning new things, and help others along the way. If you want to know more about me, what I'm up to or if you're just feeling social, feel free to get in touch, I would love to hear from you.</p>
+            </div>
+        </section>
+
+        <!-- Experiences -->
+        <section id="experiences">
+            <div class="container">
+                <div class="vertical-line"></div>
+                <div class="timeline-arrow"><i class="fas fa-chevron-down"></i></div>
+                <div class="emblem"><i class="far fa-square-full"></i></div>
+                <h1 class="section-title">EDUCATION / EXPERIENCES</h1>
+                <h2 class="big-number-left">02</h2>
+                <h3>Where I gained valuable knowledge and skills.</h3>
+                <div class="left-side"></div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <div class="container">
+                <div class="wrapper row">
+                    <div class="col-lg-5 p-0">
+                        <h1>MY SKILLS</h1>
+                        <h2 class="big-number-left">03</h2>
+                        <h3>The skills I have to offer.</h3>
+                    </div>
+                    <div class="col-lg-1 p-0"></div>
+                    <div class="skills-wrapper col-lg-6 p-0"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <!-- <section id="portfolio">
+            <div class="container">
+                <div class="p-0">
+                    <h1>PORTFOLIO</h1>
+                    <h2 class="big-number-left">04</h2>
+                    <h3>A selection of projects I have worked on.</h3>
+                </div>
+                <div id="projects-carousel" class="carousel slide" data-interval="false" data-ride="carousel">
+                    <div class="carousel-inner"></div>
+                    <a class="carousel-control-prev" href="#projects-carousel" role="button" data-slide="prev">
+                      <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#projects-carousel" role="button" data-slide="next">
+                      <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="projects-wrapper d-flex justify-content-end"></div>
+        </section> -->
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="container">
+                <div class="wrapper row">
+                    <div class="col-lg-7 p-0">
+                        <h1>GET IN TOUCH</h1>
+                        <h2 class="big-number-left">05</h2>
+                        <h3>Want to say Hi or know what I'm up to? Shoot me a message!</h3>
+                        <form action="https://formspree.io/mnqgbvwe" method="POST">
+                            <div class="row">
+                                <label class="col-6">
+                                    <input type="text" onfocus="if (this.value=='Your Name') this.value = ''" onblur="if (this.value=='') this.value = 'Your Name'" value="Your Name" name="name">
+                                </label>
+                                <label class="col-6">
+                                    <input type="text" onfocus="if (this.value=='Your Email') this.value = ''" onblur="if (this.value=='') this.value = 'Your Email'" value="Your Email" name="_replyto">
+                                </label>
+                                <label class="col-12">
+                                    <textarea name="message">Your Message</textarea>
+                                </label>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col-12"><button id="send-btn" type="submit">Send Message</button></div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="col-lg-1 p-0"></div>
+                    <div class="socials-wrapper col-lg-4 p-0">
+                        <div class="p-0 mb-5">
+                            <h1>Email</h1>
+                            <a class="email" href="">j.cheng55555@gmail.com</a>
+                        </div>
+                        <h1>Socials</h1>
+                        <a class="d-block" href="">GitHub</a>
+                        <a class="d-block" href="">LinkedIn</a>
+                        <a class="d-block" href="">Instagram</a>
+                        <a class="d-block" href="">Medium</a>
+                    </div>
+                </div>
+            </div>
+        </section>
         
         <!-- Vendor JS Files -->
-        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="assets/vendor/WOW-master/dist/wow.min.js"></script>
+        <script src="assets/vendor/jquery/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
         <!-- Main JS File -->
         <script src="assets/js/main.js"></script>
-
     </body>
 </html>
