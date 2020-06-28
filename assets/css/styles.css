@@ -182,37 +182,37 @@ button, button:focus, button:active{
 }
 
 /* Socials Bar */
-@media (min-width: 1199.98px) {
-    #socials-bar{
-        display: block !important;
-        position: absolute;
-        padding-left: 80px;
-        z-index: 1001;
-        bottom: 0;
-    }
-    #socials-bar ul{
-        padding: 0;
-        margin: 0;
-    }
-    #socials-bar ul li{
-        padding: 10px 0;
-        text-align: center;
-    }
-    #socials-bar .fab, .far{
-        color: white;
-        font-size: 24px;
-    }
-    #socials-bar .vertical-line{
-        border-left: 2px solid white;
-        height: 132px;
-        position: relative;
-        left: 50%;
-        margin-left: -1px;
-        margin-top: 10px;
-    }
-}
 #socials-bar{
-    display: none;
+    display: block !important;
+    position: absolute;
+    padding-left: 80px;
+    z-index: 1001;
+    bottom: 0;
+}
+#socials-bar ul{
+    padding: 0;
+    margin: 0;
+}
+#socials-bar ul li{
+    padding: 10px 0;
+    text-align: center;
+}
+#socials-bar .fab, .far{
+    color: white;
+    font-size: 24px;
+}
+#socials-bar .vertical-line{
+    border-left: 2px solid white;
+    height: 132px;
+    position: relative;
+    left: 50%;
+    margin-left: -1px;
+    margin-top: 10px;
+}
+@media (max-width: 1199.98px) {
+    #socials-bar{
+        display: none;
+    }
 }
 
 /* About Me */
@@ -256,7 +256,6 @@ button, button:focus, button:active{
         display: none;
     }
 }
-
 
 /* Experiences */
 #experiences{
