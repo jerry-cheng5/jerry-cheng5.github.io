@@ -8,14 +8,14 @@ const timeline = document.querySelector("#experiences > .vertical-line")
 //Scroll functions
 window.onscroll = function() {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
-        navbar.style.padding = "10px 72px";
-        navLinks.style.fontSize = "16px";
+        navbar.style.padding = "1rem 4.5rem";
+        navLinks.style.fontSize = "1rem";
         topBtn.classList.add("down");
         topBtn.parentElement.href = "#home";
     }
     else{
-        navbar.style.padding = "25px 72px";
-        navLinks.style.fontSize = "18px";
+        navbar.style.padding = "1.5rem 4.5rem";
+        navLinks.style.fontSize = "1.1rem";
         topBtn.classList.remove("down");
         topBtn.parentElement.href = "#about";
     }

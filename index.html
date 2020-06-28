@@ -26,7 +26,28 @@
     </head>
     <body>
         <!-- Navbar -->
-        <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+            <div class="container-fluid">
+                <div class="logo float-left">
+                    <a href="#home"><img src="assets/images/logo.png" alt="Personal Logo" class="img-fluid"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+            
+                <div class="collapse navbar-collapse nav-links justify-content-end" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav">
+                        <li class="d-inline"><a href="#about"><span>01. </span>About</a></li>
+                        <li class="d-inline"><a href="#experiences"><span>02. </span>Experiences</a></li>
+                        <li class="d-inline"><a href="#skills"><span>03. </span>Skills</a></li>
+                        <li class="d-inline"><a href="#portfolio"><span>04. </span>Portfolio</a></li>
+                        <li class="d-inline"><a href="#contact"><span>05. </span>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
                 <div class="logo float-left">
                     <a href="#home"><img src="assets/images/logo.png" alt="Personal Logo" class="img-fluid"></a>
@@ -41,7 +62,7 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> -->
 
         <!-- Arrow -->
         <div id="corner-arrow"><a href="#about"><i id="topBtn" class="fas fa-chevron-down rotate float-right"></i></a></div>
@@ -85,42 +106,12 @@
                 <div class="vertical-line"></div>
                 <div class="timeline-arrow"><i class="fas fa-chevron-down"></i></div>
                 <div class="emblem"><i class="far fa-square-full"></i></div>
-                <h1>EDUCATION / EXPERIENCES</h1>
-                <h2 class="big-number-right">02</h2>
+                <h1 class="section-title">EDUCATION / EXPERIENCES</h1>
+                <h2 class="big-number-left">02</h2>
                 <h3>Where I gained valuable knowledge and skills.</h3>
                 <div class="left-side"></div>
             </div>
         </section>
-
-        <!-- Modals -->
-        <!-- <div class="modal fade" id="alp-modal" tabindex="-1" role="dialog" aria-labelledby="alpLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                  <div class="container">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <i class="fa fa-times" aria-hidden="true"></i>
-                    </button>
-                    <div class="modal-header row">
-                        <h3 class="col-12">Advanced Leadership Program</h3>
-                        <p class="col-6 text-right"><span>Organization: </span>City of Ottawa</p>
-                        <p class="col-6 text-left"><span>Location: </span>Ottawa, Canada</p>
-                    </div>
-                    <div class="modal-body row">
-                        <div class="picture col-lg-6 p-0">
-                            <div class="img-outline"></div>
-                            <div class="img-placeholder">
-                                <img src="assets/images/CityofOttawa.jpg">
-                                <div></div>
-                            </div>
-                        </div>
-                        <div class="description col-lg-6 p-0">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet vehicula sem, et iaculis sapien. Curabitur erat orci, tincidunt at sapien eget, consectetur laoreet diam. Integer et dolor vel lorem porttitor aliquam vitae et lorem. Sed est metus, mattis sed sem accumsan, consequat mattis purus. Fusce non tellus eros. Cras non viverra tortor, vel hendrerit lacus. In sit amet viverra lorem. Donec vulputate enim eu dui tincidunt ornare. Donec velit elit, molestie a efficitur ut, vulputate ac massa. Nunc ornare lectus mi, nec vulputate nunc ultrices vitae. Curabitur enim quam, luctus vitae fermentum in, vehicula eu eros. Donec ullamcorper, sem feugiat convallis interdum, ligula lacus aliquam lectus, a accumsan elit mauris eget mi. Suspendisse potenti. Duis pellentesque auctor arcu, at scelerisque ipsum convallis ac. Quisque dapibus congue nibh sit amet tempus. Etiam risus quam, accumsan eu arcu ac, sodales ultrices eros.</p>
-                        </div>
-                    </div>
-                  </div>
-              </div>
-            </div>
-        </div> -->
 
         <!-- Skills -->
         <section id="skills">
@@ -159,6 +150,8 @@
             </div>
             <div class="projects-wrapper d-flex justify-content-end"></div>
         </section>
+
+        <!-- Contact -->
         <section id="contact">
             <div class="container">
                 <div class="wrapper row">
@@ -209,6 +202,5 @@
 
         <!-- Main JS File -->
         <script src="assets/js/main.js"></script>
-
     </body>
 </html>
