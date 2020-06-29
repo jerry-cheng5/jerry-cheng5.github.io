@@ -90,10 +90,15 @@ button, button:focus, button:active{
 /* Navbar */
 #navbar{
     background-color: #1D1C36;
-    padding: 1.5rem 5%;
+    padding: 1.5rem 4.5rem;
     white-space: nowrap;
     transition: 0.4s;
     box-shadow: 0px 10px 30px -10px rgba(17, 16, 41, 0.5);
+}
+@media (max-width: 991.98px) {
+    #navbar{
+        padding: 1.5rem 2rem;
+    }
 }
 #navbar .logo{
     height: 40px;
