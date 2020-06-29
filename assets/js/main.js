@@ -4,18 +4,25 @@ const navLinks = document.querySelector(".nav-links > ul");
 const topBtn = document.getElementById("topBtn");
 const experience = document.getElementById("experiences");
 const timeline = document.querySelector("#experiences > .vertical-line")
+var browserWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
 //Scroll functions
 window.onscroll = function() {
+    if (browserWidth >= 992){
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+            navbar.style.padding = "1rem 4.5rem";
+            navLinks.style.fontSize = "1rem";
+        }
+        else{
+            navbar.style.padding = "1.5rem 4.5rem";
+            navLinks.style.fontSize = "1.1rem";
+        }
+    }
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
-        navbar.style.padding = "1rem 4.5rem";
-        navLinks.style.fontSize = "1rem";
         topBtn.classList.add("down");
         topBtn.parentElement.href = "#home";
     }
     else{
-        navbar.style.padding = "1.5rem 4.5rem";
-        navLinks.style.fontSize = "1.1rem";
         topBtn.classList.remove("down");
         topBtn.parentElement.href = "#about";
     }
