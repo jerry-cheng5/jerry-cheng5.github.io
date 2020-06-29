@@ -131,10 +131,16 @@ button, button:focus, button:active{
 @media (max-width: 991.98px) {
     .nav-links ul{
         margin: 1rem 0 0 0;
+        border-top: 0.1rem white solid;
     }
     .nav-links ul li a{
         margin: 0;
-        padding: 0.5rem 0;
+    }
+    .nav-links ul li{
+        margin: 1rem 0 0 0;
+    }
+    .nav-links ul li a span{
+        display: none;
     }
 }
 .nav-links ul li a span{
