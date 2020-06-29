@@ -9,25 +9,30 @@ var browserWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 //Smooth scrolling
 $(function(){
 
-        // Animate to div 
-    $(document).on('click','.navbuttons', function(event) {
-        event.preventDefault();
-        var target = "#" + this.getAttribute('data-target');
-        
-        if(target == "#aboutDown"){
-            target = "#about";
-        }
+    $('a[href*="#"]')
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function(event) {
+        if (
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+        && 
+        location.hostname == this.hostname
+        ) {
+        // Figure out element to scroll to
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        // Does a scroll target exist?
+        if (target.length) {
+            // Only prevent default if animation is actually gonna happen
+            event.preventDefault();
 
-        if(target == "#contact"){
-           $('html, body').animate({
-            scrollTop: $(document).height()
-        }, 2000, "easeInOutQuart");
-        setTimeout(function(){$('.schoolImg').hide();},2000);
-       }else{
-        $('html, body').animate({
-            scrollTop: $(target).offset().top 
-        }, 1200, "easeInOutQuart");
-    }
+            var scrollTop = target.offset().top - $('.navbar').height();
+
+            $('html, body').animate({
+            scrollTop: scrollTop
+            }, 1000)
+        }
+        }
     });
 
     $('.navbar-nav>li>a').on('click', function(){
@@ -35,7 +40,8 @@ $(function(){
     });
     
     $('body').scrollspy({
-        target: '#navbarToggler'
+        target: '#navbarToggler',
+        offset: 80
     });
 });
 
