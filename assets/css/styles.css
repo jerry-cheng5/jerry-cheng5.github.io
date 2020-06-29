@@ -168,14 +168,14 @@ button, button:focus, button:active{
 
 /* Home (landing page) */
 #home{
-    height: 100vh;
+    min-height: 100vh;
     background-color: #1D1C36;
     position: relative;
     overflow: hidden;
 }
 #home .container{
     width: 100%;
-    padding: 15.5rem 3rem;
+    padding: 15.5rem 3rem 10rem;
 }
 #home h1{
     font-weight: 300;
@@ -274,7 +274,7 @@ button, button:focus, button:active{
 
 /* About Me */
 #about{
-    height: 100vh;
+    min-height: 100vh;
     background-color: white;
     overflow: hidden;
 }
