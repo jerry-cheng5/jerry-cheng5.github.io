@@ -41,7 +41,8 @@ $(function(){
     });
     
     $('body').scrollspy({
-        target: '#navbarToggler'
+        target: '#navbarToggler',
+        offset: 80
     });
 });
 
