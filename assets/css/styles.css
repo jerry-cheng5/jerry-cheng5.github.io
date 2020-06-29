@@ -602,7 +602,7 @@ button, button:focus, button:active{
     background-color: #1E1C37;
     border: white 2px solid;
     border-radius: 10px;
-    height: 90vh;
+    min-height: 90vh;
 }
 .modal-content button{
     position: absolute;
