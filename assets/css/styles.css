@@ -202,7 +202,7 @@ button, button:focus, button:active{
 @media (max-width: 767.98px) {
     #home .container{
         width: 100%;
-        padding: 15.5rem 2rem;
+        padding: 10rem 2rem;
     }
     #home-name{
         font-size: 3rem !important;
@@ -852,18 +852,14 @@ button, button:focus, button:active{
     height: max-content;
     background-color: white;
     position: relative;
+    /* overflow: hidden; */
 }
 #portfolio .container{
     width: 100%;
-    padding: 200px 50px 50px;
-    margin: 0 150px;
+    padding: 12.5rem 3rem 3rem;
+    margin: 0 9.4rem;
 }
-@media (min-width: 1500px){
-    #portfolio .container{
-        max-width: 38%;
-        margin: 0 300px !important;
-    }
-}
+
 #portfolio .container h1{
     position: relative;
     z-index: 1;
@@ -880,28 +876,23 @@ button, button:focus, button:active{
     float: left;
     z-index: 1;
     color: black;
-    margin-top: -170px;
-    width: 600px;
+    margin-top: -10.7rem;
+    width: 37.5rem;
 }
 #portfolio .container h3::selection{
     background: #fcc28d;
     color: inherit;
 }
 #portfolio .container .carousel{
-    height: 650px;
+    height: 41rem;
 }
 #portfolio .container .project{
     max-width: 55%;
     position: relative;
     z-index: 10;
 }
-@media (min-width: 1500px){
-    #portfolio .container .project{
-        max-width: 100%;
-    }
-}
 .project h5{
-    font-size: 32px !important;
+    font-size: 2rem !important;
     font-weight: 400 !important;
     color: #1E1C37;
     margin: 0;
@@ -912,15 +903,15 @@ button, button:focus, button:active{
 }
 .project h5 a{
     color: #1E1C37;
-    padding: 0 10px;
+    padding: 0 0.8rem;
 }
 .project h4{
-    margin: 12px 0 !important;
+    margin: 0.8rem 0 !important;
     font-weight: 400px !important;
 }
 .project p{
     color: #3D3A5A;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 .project p::selection{
@@ -929,18 +920,71 @@ button, button:focus, button:active{
 }
 .project hr{
     border: 2px solid #1E1C37;
-    width: 150px;
-    margin: 32px 0;
+    width: 10rem;
+    margin: 2rem 0;
 }
 .project ul{
     color: #3D3A5A;
-    font-size: 18px !important;
+    font-size: 1.1rem !important;
     font-weight: 400 !important;
-    padding-left: 20px;
+    padding-left: 1.2rem;
 }
 .project ul li::selection{
     background: #fcc28d;
     color: inherit;
+}
+@media (min-width: 1500px){
+    #portfolio .container{
+        max-width: 38%;
+        margin: 0 19rem !important;
+    }
+    #portfolio .container .project{
+        max-width: 100%;
+    }
+}
+@media (max-width: 1199.98px){
+    #portfolio .container{
+        padding: 12.5rem 0 3rem;
+        margin: 0 8rem;
+    }
+}
+@media (max-width: 767.98px){
+    #portfolio .container{
+        width: 100%;
+        padding: 12.5rem 0 3rem;
+        margin: 0;
+    }
+    #portfolio .container .p-0{
+        margin: 0 3rem;
+    }
+    #portfolio .container .project{
+        max-width: 100%;
+    }
+    #portfolio .container h3{
+        width: 20rem;
+        font-size: 2rem !important;
+    }
+    .project h5{
+        font-size: 1.5rem !important;
+        text-align: center;
+    }
+    .project h4{
+        text-align: center;
+    }
+    .project p{
+        font-size: 1rem !important;
+        text-align: center;
+    }
+    #portfolio .container .carousel{
+        height: auto;
+        width: 80%;
+        margin: auto;
+    }
+    .project hr{
+        border: 2px solid #1E1C37;
+        width: 15rem;
+        margin: 2rem auto;
+    }
 }
 
 /* Carousel */
@@ -967,6 +1011,10 @@ button, button:focus, button:active{
     margin: auto -10vw auto 0;
     height: 100px;
 }
+.fa-chevron-left, .fa-chevron-right{
+    color: black;
+    font-size: 36px;
+}
 @media (min-width: 1500px){
     .carousel-control-prev{
         margin-left: -5vw;
@@ -975,10 +1023,23 @@ button, button:focus, button:active{
         margin-right: -4vw;
     }
 }
-.fa-chevron-left, .fa-chevron-right{
-    color: black;
-    font-size: 36px;
+@media (max-width: 1199.98px){
+    .carousel-control-prev{
+        margin-left: -12vw;
+    }
+    .carousel-control-next{
+        margin-right: 10vw;
+    }
 }
+@media (max-width: 767.98px){
+    .carousel-control-prev{
+        margin-left: -12vw;
+    }
+    .carousel-control-next{
+        margin-right: -12vw;
+    }
+}
+
 /* Images */
 #portfolio .projects-wrapper{
     position: absolute;
@@ -1024,6 +1085,11 @@ button, button:focus, button:active{
 .blurred{
     opacity: 0.1;
 }
+@media (max-width: 767.98px){
+    #portfolio .projects-wrapper{
+        display: none !important;
+    }
+}
 
 /* Contact */
 #contact{
@@ -1032,12 +1098,11 @@ button, button:focus, button:active{
 }
 #contact .container{
     width: 100%;
-    padding: 150px 50px 100px;
+    padding: 9.4rem 3rem 6.25rem;
 }
 @media (min-width: 1500px){
     #contact .container{
-        width: 100%;
-        padding: 200px 50px 100px;
+        padding: 12.5rem 3rem 6.25rem;
     }
 }
 #contact .container h1{
@@ -1056,7 +1121,7 @@ button, button:focus, button:active{
     float: left;
     z-index: 1;
     color: white;
-    margin-top: -170px;
+    margin-top: -10.5rem;
 }
 #contact .socials-wrapper{
     font-family: 'Roboto', sans-serif !important;
@@ -1064,11 +1129,11 @@ button, button:focus, button:active{
 .socials-wrapper h1{
     letter-spacing: normal !important;
     font-weight: 400 !important;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 .socials-wrapper a{
     color: white;
-    font-size: 24px;
+    font-size: 1.2rem;
     font-weight: 400;
     text-decoration: none !important;
 }
@@ -1077,24 +1142,24 @@ button, button:focus, button:active{
 }
 /* Form */
 form{
-    margin-top: 50px;
+    margin-top: 3rem;
 }
 form label{
-    padding: 0 5px 5px;
+    padding: 0 0.5rem 0.5rem;
 }
 form label input{
     border: white 1px solid;
     border-radius: 5px;
-    height: 50px;
-    padding: 15px;
+    height: 3rem;
+    padding: 1rem;
     color: #95949E;
     background-color: transparent;
 }
 form label textarea{
     border: white 1px solid;
     border-radius: 5px;
-    height: 100px;
-    padding: 15px;
+    height: 6rem;
+    padding: 1rem;
     color: #95949E;
     background-color: transparent;
 }
@@ -1105,13 +1170,13 @@ label textarea{
     width: 100%;
 }
 #send-btn{
-    height: 50px;
-    width: 200px;
+    height: 3rem;
+    width: 12.5rem;
     border-radius: 5px;
     border: 2px solid #F7861A;
     color: #F7861A;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 1.1rem;
     background-color: transparent;
 }
 #send-btn:hover{
@@ -1125,4 +1190,17 @@ input, input:focus, input:active{
 textarea, textarea:focus, textarea:active{
     outline: none !important;
     box-shadow: none !important;
+}
+@media (max-width: 991.98px){
+    .socials-wrapper{
+        margin-top: 3rem;
+    }
+}
+@media (max-width: 767.98px){
+    #contact .container h3{
+        font-size: 1.8rem !important;
+    }
+    form{
+        margin-top: 0;
+    }
 }
