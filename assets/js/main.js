@@ -12,7 +12,6 @@ $(function(){
     $('a[href*="#"]')
     .not('[href="#"]')
     .not('[href="#0"]')
-    // Remove links that don't actually link to anything
     .click(function(event) {
         if (
         location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
