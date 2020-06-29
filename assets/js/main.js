@@ -26,7 +26,7 @@ $(function(){
             // Only prevent default if animation is actually gonna happen
             event.preventDefault();
 
-            var scrollTop = target.offset().top - $('.navbar').height();
+            var scrollTop = target.offset().top;
 
             $('html, body').animate({
             scrollTop: scrollTop
