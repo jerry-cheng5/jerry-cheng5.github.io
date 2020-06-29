@@ -8,21 +8,32 @@ var browserWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
 //Smooth scrolling
 $(function(){
-    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html, body').animate({
-                scrollTop: (target.offset().top - 54)
-                }, 1000, "easeInOutExpo");
-                return false;
-            }
+
+        // Animate to div 
+    $(document).on('click','.navbuttons', function(event) {
+        event.preventDefault();
+        var target = "#" + this.getAttribute('data-target');
+        
+        if(target == "#aboutDown"){
+            target = "#about";
         }
+
+        if(target == "#contact"){
+           $('html, body').animate({
+            scrollTop: $(document).height()
+        }, 2000, "easeInOutQuart");
+        setTimeout(function(){$('.schoolImg').hide();},2000);
+       }else{
+        $('html, body').animate({
+            scrollTop: $(target).offset().top 
+        }, 1200, "easeInOutQuart");
+    }
     });
+
     $('.navbar-nav>li>a').on('click', function(){
         $('.navbar-collapse').collapse('hide');
     });
+    
     $('body').scrollspy({
         target: '#navbarToggler'
     });
@@ -216,7 +227,7 @@ for (let i = 0; i < jsonData.experiences.length; i++) {
                 coursesBtn.innerHTML = "Show Courses";
             }   
         })
-        coursesBtn.addEventListener("focusout", function() {
+        coursesBtn.addEventListener("blur", function() {
             if (popout.classList.contains("pop-active")){
                 coursesBtn.innerHTML = "Show Courses";
                 popout.classList.remove("pop-active");
