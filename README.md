@@ -9,5 +9,3 @@ https://jerry-cheng5.github.io/
 #### Contact Me
 
 Email: j.cheng55555@gmail.com
-
-![alt tag](https://jerry-cheng5.github.io/images/coverPhoto.jpg)
