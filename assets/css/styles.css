@@ -11,6 +11,9 @@ body{
     background-color: white;
     font-family: 'Roboto', sans-serif;
     color: white;
+    position: relative;
+    height: auto;
+    overflow-y: scroll;
 }
 a{
     color: white;
@@ -127,6 +130,9 @@ button, button:focus, button:active{
     color: white;
     font-weight: 300;
     text-decoration: none;
+}
+.nav-links ul li .nav-link.active{
+    color: #F7861A;
 }
 @media (max-width: 991.98px) {
     .nav-links ul{
@@ -245,8 +251,12 @@ button, button:focus, button:active{
     text-align: center;
 }
 #socials-bar .fab, .far{
+    transition: linear 0.2s;
     color: white;
     font-size: 24px;
+}
+#socials-bar .fab:hover, .far:hover{
+    color: #fcc28d !important;
 }
 #socials-bar .vertical-line{
     border-left: 2px solid white;
