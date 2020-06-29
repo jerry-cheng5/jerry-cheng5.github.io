@@ -6,6 +6,17 @@ const experience = document.getElementById("experiences");
 const timeline = document.querySelector("#experiences > .vertical-line")
 var browserWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
+//Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 //Scroll functions
 window.onscroll = function() {
     if (browserWidth >= 992){
