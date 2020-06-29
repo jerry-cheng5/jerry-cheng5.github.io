@@ -852,7 +852,7 @@ button, button:focus, button:active{
     height: max-content;
     background-color: white;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 #portfolio .container{
     width: 100%;
