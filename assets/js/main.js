@@ -1,3 +1,6 @@
+//Initialize wow animations
+new WOW().init();
+
 //Variables
 const navbar = document.getElementById("navbar");
 const navLinks = document.querySelector(".nav-links > ul");
@@ -9,7 +12,7 @@ var browserWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 //Smooth scrolling
 $(function(){
 
-    $('a[href*="#"]')
+    $('a.nav-link[href*="#"]')
     .not('[href="#"]')
     .not('[href="#0"]')
     .click(function(event) {
@@ -128,7 +131,8 @@ for(i in jsonData.experiences){
         node.classList.add("education", "row");
 
         var description = document.createElement("div");
-        description.classList.add("d-inline", "col", "description");
+        description.classList.add("d-inline", "col", "description", "wow", "fadeInLeft");
+        description.setAttribute("data-wow-delay", "0.8s");
 
         var organization = document.createElement("h1");
         organization.classList.add("d-block");
@@ -149,13 +153,15 @@ for(i in jsonData.experiences){
         description.appendChild(button);
 
         var emblem = document.createElement("div");
-        emblem.classList.add("d-inline", "col-1", "ed-emblem");
+        emblem.classList.add("d-inline", "col-1", "ed-emblem", "wow", "bounceIn");
+        emblem.setAttribute("data-wow-delay", "0.3s");
         var icon = document.createElement("i");
         icon.classList.add("fas", "fa-graduation-cap");
         emblem.appendChild(icon);
 
         var timeWrapper = document.createElement("div");
-        timeWrapper.classList.add("d-inline", "col");
+        timeWrapper.classList.add("d-inline", "col", "wow", "fadeInRight");
+        timeWrapper.setAttribute("data-wow-delay", "0.8s");
         var time = document.createElement("h5");
         time.style.textAlign = "left";
         time.innerHTML = jsonData.experiences[i].time;
@@ -173,7 +179,8 @@ for(i in jsonData.experiences){
         node.classList.add("education", "experience", "row");
 
         var description = document.createElement("div");
-        description.classList.add("d-inline", "col", "description");
+        description.classList.add("d-inline", "col", "description", "wow", "fadeInRight");
+        description.setAttribute("data-wow-delay", "0.8s");
 
         var organization = document.createElement("h1");
         organization.classList.add("d-block");
@@ -196,13 +203,15 @@ for(i in jsonData.experiences){
         description.appendChild(button);
 
         var emblem = document.createElement("div");
-        emblem.classList.add("d-inline", "col-1", "ed-emblem");
+        emblem.classList.add("d-inline", "col-1", "ed-emblem", "wow", "bounceIn");
+        emblem.setAttribute("data-wow-delay", "0.3s");
         var icon = document.createElement("i");
         icon.classList.add(jsonData.experiences[i].iconType, jsonData.experiences[i].icon);
         emblem.appendChild(icon);
 
         var timeWrapper = document.createElement("div");
-        timeWrapper.classList.add("d-inline", "col", "time");
+        timeWrapper.classList.add("d-inline", "col", "time", "wow", "fadeInLeft");
+        timeWrapper.setAttribute("data-wow-delay", "0.8s");
         var time = document.createElement("h5");
         time.style.textAlign = "right";
         time.innerHTML = jsonData.experiences[i].time;
@@ -343,10 +352,13 @@ for (let i = 0; i < jsonData.experiences.length; i++) {
 const skills = document.querySelector(".skills-wrapper");
 var accordion = document.createElement("div");
 accordion.id = "accordion";
+animationDelay = 0.8;
 
 for(i in jsonData.allSkills){
     var node = document.createElement("div");
-    node.classList.add("skill-cat");
+    node.classList.add("skill-cat", "wow", "fadeInUp");
+    node.setAttribute("data-wow-delay", animationDelay + "s");
+    animationDelay += 0.1;
 
     var header = document.createElement("div");
     header.classList.add("skill-header");

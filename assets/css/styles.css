@@ -175,7 +175,7 @@ button, button:focus, button:active{
 }
 #home .container{
     width: 100%;
-    padding: 15.5rem 3rem 10rem;
+    padding: 12rem 3rem 10rem;
 }
 #home h1{
     font-weight: 300;
@@ -919,7 +919,7 @@ button, button:focus, button:active{
 }
 .project h5 a{
     color: #1E1C37;
-    padding: 0 0.8rem;
+    padding: 0 0 0 1rem;
 }
 .project h4{
     margin: 0.8rem 0 !important;
