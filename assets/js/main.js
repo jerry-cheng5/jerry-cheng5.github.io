@@ -10,35 +10,39 @@ const timeline = document.querySelector("#experiences > .vertical-line")
 var browserWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
 //Smooth scrolling
-$(function(){
+$(function () {
+
+    $(document).ready(function () {
+        $(this).scrollTop(0);
+    });
 
     $('a.nav-link[href*="#"]')
-    .not('[href="#"]')
-    .not('[href="#0"]')
-    .click(function(event) {
-        if (
-        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-        && 
-        location.hostname == this.hostname
-        ) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-            event.preventDefault();
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function (event) {
+            if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                &&
+                location.hostname == this.hostname
+            ) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    event.preventDefault();
 
-            var scrollTop = target.offset().top;
+                    var scrollTop = target.offset().top;
 
-            $('html, body').animate({
-            scrollTop: scrollTop
-            }, 1000, "easeInOutExpo")
-        }
-        }
-    });
+                    $('html, body').animate({
+                        scrollTop: scrollTop
+                    }, 1000, "easeInOutExpo")
+                }
+            }
+        });
 
-    $('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-nav>li>a').on('click', function () {
         $('.navbar-collapse').collapse('hide');
     });
-    
+
     $('body').scrollspy({
         target: '#navbarToggler',
         offset: 80
@@ -46,29 +50,29 @@ $(function(){
 });
 
 //Scroll functions
-window.onscroll = function() {
-    if (browserWidth >= 992){
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+window.onscroll = function () {
+    if (browserWidth >= 992) {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
             navbar.style.padding = "1rem 4.5rem";
             navLinks.style.fontSize = "1rem";
         }
-        else{
+        else {
             navbar.style.padding = "1.5rem 4.5rem";
             navLinks.style.fontSize = "1.1rem";
         }
     }
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         topBtn.classList.add("down");
         topBtn.parentElement.href = "#home";
     }
-    else{
+    else {
         topBtn.classList.remove("down");
         topBtn.parentElement.href = "#about";
     }
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         topBtn.style.animation = "0";
     }
-    else{
+    else {
         topBtn.style.animation = "bounce 2s infinite";
     }
 };
@@ -82,7 +86,7 @@ $.ajax({
     success: function (data) {
         jsonData = data;
     }.bind(this),
-        error: function (xhr, status, err) {
+    error: function (xhr, status, err) {
         console.log(err);
         alert(err);
     },
@@ -91,13 +95,13 @@ $.ajax({
 
 //Education and Experience cards
 const experiences = document.querySelector("#experiences > .container");
-for(i in jsonData.experiences){
-    if (jsonData.experiences[i].education == true){
+for (i in jsonData.experiences) {
+    if (jsonData.experiences[i].education == true) {
         //Making the courses popout
         var popout = document.createElement("div");
         popout.classList.add("popout");
         popout.id = jsonData.experiences[i].id + "-popout";
-        
+
         var header = document.createElement("div");
         header.classList.add("courses-header", "row");
 
@@ -112,7 +116,7 @@ for(i in jsonData.experiences){
         average.classList.add("average");
         average.innerHTML = "Average: " + jsonData.experiences[i].average;
         var list = document.createElement("ul");
-        for (j in jsonData.experiences[i].courses){
+        for (j in jsonData.experiences[i].courses) {
             var listItem = document.createElement("li");
             var course = document.createElement("p");
             course.innerHTML = jsonData.experiences[i].courses[j];
@@ -166,14 +170,14 @@ for(i in jsonData.experiences){
         time.style.textAlign = "left";
         time.innerHTML = jsonData.experiences[i].time;
         timeWrapper.appendChild(time);
-        
+
         node.appendChild(description);
         node.appendChild(emblem);
         node.appendChild(timeWrapper);
         experiences.appendChild(node);
-        
+
     }
-    else{
+    else {
         //Making the Experience card
         var node = document.createElement("div");
         node.classList.add("education", "experience", "row");
@@ -216,7 +220,7 @@ for(i in jsonData.experiences){
         time.style.textAlign = "right";
         time.innerHTML = jsonData.experiences[i].time;
         timeWrapper.appendChild(time);
-        
+
         node.appendChild(timeWrapper);
         node.appendChild(emblem);
         node.appendChild(description);
@@ -226,21 +230,21 @@ for(i in jsonData.experiences){
 
 //Popout
 for (let i = 0; i < jsonData.experiences.length; i++) {
-    if (jsonData.experiences[i].education == true){
+    if (jsonData.experiences[i].education == true) {
         const coursesBtn = document.getElementById(jsonData.experiences[i].id);
         const query = jsonData.experiences[i].id + "-popout";
         const popout = document.getElementById(query);
-        coursesBtn.addEventListener("click", function() {
+        coursesBtn.addEventListener("click", function () {
             popout.classList.toggle("pop-active");
-            if (popout.classList.contains("pop-active")){
+            if (popout.classList.contains("pop-active")) {
                 coursesBtn.innerHTML = "Hide Courses";
             }
-            else{
+            else {
                 coursesBtn.innerHTML = "Show Courses";
-            }   
+            }
         })
-        coursesBtn.addEventListener("blur", function() {
-            if (popout.classList.contains("pop-active")){
+        coursesBtn.addEventListener("blur", function () {
+            if (popout.classList.contains("pop-active")) {
                 coursesBtn.innerHTML = "Show Courses";
                 popout.classList.remove("pop-active");
             }
@@ -250,8 +254,8 @@ for (let i = 0; i < jsonData.experiences.length; i++) {
 
 //Modals
 const body = document.querySelector("body");
-for(i in jsonData.experiences){
-    if (jsonData.experiences[i].education != true){
+for (i in jsonData.experiences) {
+    if (jsonData.experiences[i].education != true) {
         var modal = document.createElement("div");
         modal.classList.add("modal", "fade");
         modal.id = jsonData.experiences[i].id + "-modal";
@@ -333,14 +337,14 @@ for(i in jsonData.experiences){
 
 //Modal Images
 for (let i = 0; i < jsonData.experiences.length; i++) {
-    if (jsonData.experiences[i].education != true){
+    if (jsonData.experiences[i].education != true) {
         const imgOutline = document.getElementById(jsonData.experiences[i].id + "-img-outline")
         const modalImg = document.getElementById(jsonData.experiences[i].id + "-img-placeholder");
-        modalImg.addEventListener("mouseover", function(){
+        modalImg.addEventListener("mouseover", function () {
             imgOutline.style.left = "-10px";
             imgOutline.style.top = "10px";
         })
-        modalImg.addEventListener("mouseout", function(){
+        modalImg.addEventListener("mouseout", function () {
             imgOutline.style.left = "-20px";
             imgOutline.style.top = "20px";
         })
@@ -354,7 +358,7 @@ var accordion = document.createElement("div");
 accordion.id = "accordion";
 animationDelay = 0.8;
 
-for(i in jsonData.allSkills){
+for (i in jsonData.allSkills) {
     var node = document.createElement("div");
     node.classList.add("skill-cat", "wow", "fadeInUp");
     node.setAttribute("data-wow-delay", animationDelay + "s");
@@ -374,7 +378,7 @@ for(i in jsonData.allSkills){
 
     var catName = document.createElement("h5");
     catName.classList.add("d-inline");
-    catName.innerHTML = "<span>0" + (parseInt(i, 10)+1) + ". </span>" + jsonData.allSkills[i].catagory;
+    catName.innerHTML = "<span>0" + (parseInt(i, 10) + 1) + ". </span>" + jsonData.allSkills[i].catagory;
     var downArrow = document.createElement("i");
     downArrow.classList.add("fas", "fa-chevron-down", "d-inline");
 
@@ -391,7 +395,7 @@ for(i in jsonData.allSkills){
     var skillBody = document.createElement("div");
     skillBody.classList.add("skill-body");
 
-    for (j in jsonData.allSkills[i].skills){
+    for (j in jsonData.allSkills[i].skills) {
         var skill = document.createElement("div");
         skill.classList.add("skill", "d-block");
         var skillName = document.createElement("p");
@@ -423,15 +427,15 @@ for(i in jsonData.allSkills){
 skills.appendChild(accordion);
 
 //Initialize tooltips
-$('[data-toggle="tooltip"]').tooltip(); 
+$('[data-toggle="tooltip"]').tooltip();
 
 //Projects
 const projectsWrapper = document.querySelector(".carousel-inner");
 
-for(i in jsonData.projects){
+for (i in jsonData.projects) {
     var carItem = document.createElement("div");
     carItem.classList.add("carousel-item");
-    if (i == 0){
+    if (i == 0) {
         carItem.classList.add("active");
     }
 
@@ -440,8 +444,8 @@ for(i in jsonData.projects){
     projName = document.createElement("h5");
     projName.innerHTML = jsonData.projects[i].name;
     var links = document.createElement("span");
-    
-    if (jsonData.projects[i].github != ""){
+
+    if (jsonData.projects[i].github != "") {
         var github = document.createElement("a");
         github.href = jsonData.projects[i].github;
         var icon = document.createElement("i");
@@ -449,7 +453,7 @@ for(i in jsonData.projects){
         github.appendChild(icon);
         links.appendChild(github);
     }
-    if(jsonData.projects[i].externalLink != ""){
+    if (jsonData.projects[i].externalLink != "") {
         var link = document.createElement("a");
         link.href = jsonData.projects[i].externalLink;
         var icon = document.createElement("i");
@@ -467,7 +471,7 @@ for(i in jsonData.projects){
     subtitle.innerHTML = "LANGUAGES, LIBRARIES, AND TOOLS USED";
     var tools = document.createElement("ul");
 
-    for (j in jsonData.projects[i].used){
+    for (j in jsonData.projects[i].used) {
         var tool = document.createElement("li");
         tool.innerHTML = jsonData.projects[i].used[j];
         tools.appendChild(tool);
@@ -486,12 +490,12 @@ for(i in jsonData.projects){
 //Project Images
 const picturesWrapper = document.querySelector(".projects-wrapper");
 
-for(i in jsonData.projects){
+for (i in jsonData.projects) {
     var node = document.createElement("img");
-    if (jsonData.projects[i].webpage == true){
+    if (jsonData.projects[i].webpage == true) {
         node.classList.add("webpage-image");
     }
-    else{
+    else {
         node.classList.add("phone-image");
     }
     node.id = jsonData.projects[i].id;
@@ -505,20 +509,20 @@ for(i in jsonData.projects){
 for (let i = 0; i < jsonData.projects.length; i++) {
     const currentNode = document.getElementById(jsonData.projects[i].id);
 
-    currentNode.addEventListener("mouseover", function() {
+    currentNode.addEventListener("mouseover", function () {
         currentNode.classList.add("selected");
-        for (let j = i; j < jsonData.projects.length; j++){
-            if (jsonData.projects[j].id != jsonData.projects[i].id){
+        for (let j = i; j < jsonData.projects.length; j++) {
+            if (jsonData.projects[j].id != jsonData.projects[i].id) {
                 const otherNode = document.getElementById(jsonData.projects[j].id);
                 console.log(otherNode);
                 otherNode.classList.add("blurred");
             }
         }
     })
-    currentNode.addEventListener("mouseout", function() {
+    currentNode.addEventListener("mouseout", function () {
         currentNode.classList.remove("selected");
-        for (let j = i; j < jsonData.projects.length; j++){
-            if (jsonData.projects[j].id != jsonData.projects[i].id){
+        for (let j = i; j < jsonData.projects.length; j++) {
+            if (jsonData.projects[j].id != jsonData.projects[i].id) {
                 const otherNode = document.getElementById(jsonData.projects[j].id);
                 otherNode.classList.remove("blurred");
             }
@@ -528,13 +532,13 @@ for (let i = 0; i < jsonData.projects.length; i++) {
 
 //Form
 const messageBox = document.querySelector("form > div > label > textarea");
-messageBox.addEventListener("focus", function() {
-    if (this.innerHTML == "Your Message"){
+messageBox.addEventListener("focus", function () {
+    if (this.innerHTML == "Your Message") {
         this.innerHTML = "";
     }
 })
-messageBox.addEventListener("blur", function() {
-    if (this.innerHTML == ""){
+messageBox.addEventListener("blur", function () {
+    if (this.innerHTML == "") {
         this.innerHTML = "Your Message";
     }
 })
