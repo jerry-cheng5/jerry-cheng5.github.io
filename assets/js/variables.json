@@ -289,7 +289,7 @@
                 "Many smaller python libraries"
             ],
             "github" : "https://github.com/SynergyyBot/SynergyyBot",
-            "externalLink" : "",
+            "externalLink" : "https://discord.com/oauth2/authorize?client_id=719271108037312595&permissions=67628096&scope=bot",
             "projectImage" : "assets/images/synergyybot.png",
             "webpage" : false
         }
