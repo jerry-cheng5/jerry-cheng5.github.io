@@ -182,14 +182,12 @@
             "skills" : [
                 "SQL",
                 "SQLITE",
-                "AWS",
-                "HEROKU"
+                "AWS"
             ],
             "progress" : [
                 "70",
                 "80",
-                "70",
-                "70"
+                "50"
             ]
         },
         {
@@ -274,7 +272,7 @@
                 "Photoshop"
             ],
             "github" : "https://github.com/SynergyyBot/Synergyy-Website",
-            "externalLink" : "",
+            "externalLink" : "synergyy.ml",
             "projectImage" : "assets/images/SynergyyWebsite.jpg",
             "webpage" : true
         },
