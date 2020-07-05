@@ -447,6 +447,7 @@ for (i in jsonData.projects) {
 
     if (jsonData.projects[i].github != "") {
         var github = document.createElement("a");
+        github.setAttribute("target", "_blank");
         github.href = jsonData.projects[i].github;
         var icon = document.createElement("i");
         icon.classList.add("fab", "fa-github");
