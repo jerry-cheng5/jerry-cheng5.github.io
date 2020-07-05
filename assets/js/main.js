@@ -455,6 +455,7 @@ for (i in jsonData.projects) {
     }
     if (jsonData.projects[i].externalLink != "") {
         var link = document.createElement("a");
+        link.setAttribute("target", "_blank");
         link.href = jsonData.projects[i].externalLink;
         var icon = document.createElement("i");
         icon.classList.add("fas", "fa-external-link-alt");
