@@ -180,14 +180,12 @@
             "id" : "dataCloud",
             "catagory" : "Database / Cloud",
             "skills" : [
-                "SQL",
                 "SQLITE",
-                "AWS"
+                "Heroku"
             ],
             "progress" : [
-                "70",
                 "80",
-                "50"
+                "55"
             ]
         },
         {
