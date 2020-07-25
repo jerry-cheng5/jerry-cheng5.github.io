@@ -278,7 +278,7 @@
             "id" : "synergyy-bot",
             "name" : "Synergyy Discord Bot",
             "type" : "AUTOMATED DISCORD BOT",
-            "description" : "Many highschools and universities have announced that for the 2020 Fall Semester, all courses will be online. This sparked the creation of SynergyyBot–A Project Management Discord Bot Built for Students. This bot includes meeting creation, RVSP, reminders, task creation, Google Calendar integration, and more. My friend and I did this by using Discord’s python API, discord.py, as well as SQLite and SQL to store data. We are also hosting this bot on AWS, so that it can be used by many discord servers. We also learned the Google Calendar API to add Google Calendar integration to our bot. We hope that this bot can help with team collaboration during the upcoming school terms.",
+            "description" : "Many highschools and universities have announced that for the 2020 Fall Semester, all courses will be online. This sparked the creation of SynergyyBot–A Project Management Discord Bot Built for Students. This bot includes meeting creation, RVSP, reminders, task creation, Google Calendar integration, and more. My friend and I did this by using Discord’s python API, discord.py, as well as PostgreSQL to store data. We are also hosting this bot on Heroku, so that it can be used by many discord servers. We also learned the Google Calendar API to add Google Calendar integration to our bot. We hope that this bot can help with team collaboration during the upcoming school terms.",
             "used" : [
                 "Python 3",
                 "Discord.py",
