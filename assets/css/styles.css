@@ -406,7 +406,8 @@ button, button:focus, button:active{
     z-index: 4;
 }
 .fa-square-full{
-    color: white;
+    color: #1E1C37;
+    border-color: white;
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -633,6 +634,9 @@ button, button:focus, button:active{
 }
 .modal-content span{
     color: #F7861A;
+}
+.modal-content a{
+    color: white;
 }
 .modal-content .modal-body{
     align-items: center;
@@ -1093,8 +1097,12 @@ button, button:focus, button:active{
     right: 6%;
 }
 #synergyy-web{
-    max-width: 70%;
+    max-width: 72%;
     right: 10%;
+}
+#keep-tasks-clone{
+    max-width: 65%;
+    right: 11%;
 }
 #synergyy-bot{
     right: 12%;

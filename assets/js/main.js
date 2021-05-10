@@ -107,14 +107,14 @@ for (i in jsonData.experiences) {
 
         var title = document.createElement("h1");
         title.classList.add("courses-title", "d-inline", "col");
-        title.innerHTML = "Courses";
+        title.innerHTML = "Relevant Courses";
         header.appendChild(title);
 
         var courses = document.createElement("div");
         courses.classList.add("courses");
         var average = document.createElement("p");
         average.classList.add("average");
-        average.innerHTML = "Average: " + jsonData.experiences[i].average;
+        average.innerHTML = "GPA: " + jsonData.experiences[i].average;
         var list = document.createElement("ul");
         for (j in jsonData.experiences[i].courses) {
             var listItem = document.createElement("li");
@@ -315,8 +315,8 @@ for (i in jsonData.experiences) {
         var imgLink = document.createElement("img");
         imgLink.src = jsonData.experiences[i].image;
         img.appendChild(imgLink);
-        var shader = document.createElement("div");
-        img.appendChild(shader);
+        //var shader = document.createElement("div");
+        //img.appendChild(shader);
         picture.appendChild(img);
         modalBody.appendChild(picture);
 

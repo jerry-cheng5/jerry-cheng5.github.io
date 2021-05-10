@@ -1,62 +1,21 @@
 {
     "experiences" : [
         {
-            "id" : "grade-nine",
+            "id" : "high-school",
             "organization" : "Colonel By SS",
             "location" : "Gloucester, Canada",
-            "name" : "Grade 9 Pre-IB",
-            "time" : "2016-2017",
+            "name" : "IB Program",
+            "time" : "2016-2020",
             "education" : true,
             "courses" : [
-                "English",
-                "Math",
-                "Science",
-                "French",
-                "Geography",
-                "Health & PE",
-                "Music",
-                "Exploring Technologies",
-                "Music Repertoire"
+                "English (IB2 HL)",
+                "Math (IB2 SL)",
+                "French (IB2 SL)",
+                "Chemistry (IB1 HL)",
+                "Physics (IB1 HL)",
+                "Mathematics of Data Management"
             ],
-            "average" : "91%"
-        },
-        {
-            "id" : "grade-ten",
-            "organization" : "Colonel By SS",
-            "location" : "Gloucester, Canada",
-            "name" : "Grade 10 Pre-IB",
-            "time" : "2017-2018",
-            "education" : true,
-            "courses" : [
-                "English",
-                "Math",
-                "Science",
-                "French",
-                "History",
-                "Introduction to Computer Science",
-                "Health & PE",
-                "Introduction to Business"
-            ],
-            "average" : "90%"
-        },
-        {
-            "id" : "grade-eleven",
-            "organization" : "Colonel By SS",
-            "location" : "Gloucester, Canada",
-            "name" : "Grade 11 IB1",
-            "time" : "2018-2019",
-            "education" : true,
-            "courses" : [
-                "English (IB1)",
-                "Math (IB1)",
-                "Canadian Law",
-                "French (IB1)",
-                "Theory of Knowledge (IB1)",
-                "Chemistry (IB1)",
-                "Physics (IB1)",
-                "Information Technology in a Global Society (IB1)"
-            ],
-            "average" : "94%"
+            "average" : "96%"
         },
         {
             "id" : "alp",
@@ -83,23 +42,6 @@
             "iconType" : "fas",
             "icon" : "fa-clipboard",
             "image" : "assets/images/ODBA.jpg"
-        },
-        {
-            "id" : "grade-twelve",
-            "organization" : "Colonel By SS",
-            "location" : "Gloucester, Canada",
-            "name" : "Grade 12 IB2",
-            "time" : "2019-2020",
-            "education" : true,
-            "courses" : [
-                "English (IB2 HL)",
-                "Math (IB2 SL)",
-                "French (IB2 SL)",
-                "Chemistry (IB1 HL)",
-                "Physics (IB1 HL)",
-                "Mathematics of Data Management"
-            ],
-            "average" : "96%"
         },
         {
             "id" : "vex",
@@ -139,6 +81,36 @@
             "iconType" : "fas",
             "icon" : "fa-briefcase",
             "image" : "assets/images/CityofOttawa.jpg"
+        },
+        {
+            "id" : "coolage",
+            "organization" : "Coolage",
+            "location" : "Remote",
+            "name" : "Web Development Intern",
+            "time" : "2020",
+            "education" : false,
+            "info" : "During the summer of 2020, I had the pleasure of being a part of Coolage's internship program. I worked with the web development team, improving both the front-end and the back-end of the website.<br><br>During my two months, I led the initiative of setting up and using Firebase for features on the website and the mobile application. I personally created a dynamic \"website visits\" counter that updates in real time, which has over 11700 website visits! I also designed and tested prototypes for other webpages using Figma and Photoshop.<br><br>The website can be found <a href=\"coolage.app\">here</a>.",
+            "link" : "",
+            "iconType" : "fas",
+            "icon" : "fa-briefcase",
+            "image" : "assets/images/coolage.jpg"
+        },
+        {
+            "id" : "undergrad",
+            "organization" : "University of Waterloo",
+            "location" : "Waterloo, Canada",
+            "name" : "Bachelor of Computer Science",
+            "time" : "2020-2025",
+            "education" : true,
+            "courses" : [
+                "Object-Oriented Software Development",
+                "Algorithms Design & Data Abstraction",
+                "Functional Programs",
+                "Logic & Computation",
+                "Linear Algebra",
+                "Calculus 1 & 2"
+            ],
+            "average" : "3.84/4.0"
         }
     ],
     "allSkills" : [
@@ -146,10 +118,11 @@
             "id" : "webdev",
             "catagory" : "Web Development",
             "skills" : [
+                "VUE.JS",
+                "REACT.JS",
                 "HTML5",
                 "CSS3",
                 "JAVASCRIPT",
-                "NODE.JS",
                 "JQUERY",
                 "BOOTSTRAP"
             ],
@@ -157,9 +130,10 @@
                 "90",
                 "85",
                 "90",
-                "70",
-                "70",
-                "85"
+                "90",
+                "85",
+                "85",
+                "70"
             ]
         },
         {
@@ -167,69 +141,73 @@
             "catagory" : "Programming Languages",
             "skills" : [
                 "PYTHON",
+                "C",
+                "C++",
                 "JAVA",
-                "C++"
+                "RACKET"
             ],
             "progress" : [
                 "90",
+                "85",
+                "85",
                 "80",
-                "80"
+                "85"
             ]
         },
         {
             "id" : "dataCloud",
             "catagory" : "Database / Cloud",
             "skills" : [
-                "SQLITE",
+                "POSTGRESQL",
                 "HEROKU"
             ],
             "progress" : [
-                "80",
-                "55"
+                "85",
+                "70"
             ]
         },
         {
             "id" : "frameworks",
             "catagory" : "Other Frameworks",
             "skills" : [
-                "DISCORD.PY",
-                "PROS"
+                "DISCORD.PY"
             ],
             "progress" : [
-                "90",
-                "75"
+                "90"
             ]
         },
         {
             "id" : "graphic",
             "catagory" : "Graphic Design Tools",
             "skills" : [
+                "FIGMA",
                 "ADOBE PHOTOSHOP",
-                "ADOBE ILLUSTRATOR",
-                "FIGMA"
+                "ADOBE ILLUSTRATOR"
             ],
             "progress" : [
+                "90",
                 "85",
-                "80",
-                "90"
+                "80"
             ]
         },
         {
             "id" : "otherSkills",
-            "catagory" : "Skills",
+            "catagory" : "Transferable Skills",
             "skills" : [
-                "LEADERSHIP",
-                "TEAMWORK",
-                "PROBLEM-SOLVING",
                 "WILLINGNESS TO LEARN",
-                "MOTIVATION"
+                "MOTIVATION",
+                "TEAMWORK",
+                "COMMUNICATION",
+                "LEADERSHIP",
+                "PROBLEM-SOLVING"
             ],
             "progress" : [
-                "85",
-                "90",
-                "90",
                 "100",
-                "95"
+                "100",
+                "95",
+                "95",
+                "90",
+                "90"
             ]
         }
     ],
@@ -238,7 +216,7 @@
             "id" : "my-website",
             "name" : "Portfolio Website",
             "type" : "WEB DEVELOPMENT",
-            "description" : "Since I was introduced to Web Development in grade 9, I’ve enjoyed designing and creating websites. I’ve created many small websites in my technology courses in highschool, and I decided to take everything I learned to create this website. I took the basics that I learned from school and merged them with various frameworks/libraries such as Bootstrap, Animate.css, Wow.js, JQuery, and more. I also wanted to make this website dynamic, so I also learned about JSON files and how to use them for Web Development. This website served as a practice tool to improve my web development skills as well as a portfolio for my many future projects!",
+            "description" : "Since I was introduced to web development in highschool, I’ve enjoyed designing and creating websites. I’ve created many small websites in my technology courses in highschool, and I decided to take everything I learned to create this website. I took the basics that I learned from school and merged them with various frameworks/libraries such as Bootstrap, Animate.css, Wow.js, JQuery, and more. I also wanted to make this website dynamic, so I also learned about JSON files and how to use them for web development. This website served as a practice tool to improve my web development skills as well as a portfolio for my many future projects!",
             "used" : [
                 "HTML5",
                 "CSS3",
@@ -257,7 +235,7 @@
             "id" : "synergyy-web",
             "name" : "Synergyy Website",
             "type" : "WEB DEVELOPMENT",
-            "description" : "This is the website that my friend and I made for our Project Management discord bot–SynergyyBot. This website includes descriptions and documents about our bot as well as quick and simple guides on how to use our bot. It also has a FAQ and a reviews section which can help the users. We used the basic web development tools as well as Bootstrap, Animate.css, Wow.js, PHP forms, and more. This was another great project that allowed me to hone my web development skills as well as my graphic designing skills.",
+            "description" : "This webpage was made for my project management discord bot–SynergyyBot. It includes descriptions and documents about our bot as well as quick and simple guides on how to use our bot. It also has a FAQ and a reviews section which can help potential and current users. This was another great project that allowed me to hone my web development skills as well as my graphic designing skills.",
             "used" : [
                 "HTML5",
                 "CSS3",
@@ -275,15 +253,31 @@
             "webpage" : true
         },
         {
+            "id" : "keep-tasks-clone",
+            "name" : "Google Keep / Tasks Clone",
+            "type" : "WEB APP DEVELOPMENT",
+            "description" : "This web application merges Google's note taking app, Google Keep, with their tasks app, Google Tasks. Using Vue.js and Firebase, I created a \"clone\" of the two apps. The key features that this web app captures are: creating a note/task, editing existing notes/tasks, deleting notes/tasks, and marking tasks as done. This was a very fun project, where I learned the basics of both Vue.js and Firebase.<br><br>P.S. I also designed the Vue.js + Firebase logo that is on the website :)",
+            "used" : [
+                "Vue.js",
+                "Firebase",
+                "Bootstrap",
+                "Photoshop"
+            ],
+            "github" : "https://github.com/jerry-cheng5/Keep-Tasks-Clone",
+            "externalLink" : "https://jerry-cheng5.github.io/Keep-Tasks-Clone/",
+            "projectImage" : "assets/images/keep-tasks-clone.jpg",
+            "webpage" : true
+        },
+        {
             "id" : "synergyy-bot",
             "name" : "Synergyy Discord Bot",
             "type" : "AUTOMATED DISCORD BOT",
-            "description" : "Many highschools and universities have announced that for the 2020 Fall Semester, all courses will be online. This sparked the creation of SynergyyBot–A Project Management Discord Bot Built for Students. This bot includes meeting creation, RVSP, reminders, task creation, Google Calendar integration, and more. My friend and I did this by using Discord’s python API, discord.py, as well as PostgreSQL to store data. We are also hosting this bot on Heroku, so that it can be used by many discord servers. We also learned the Google Calendar API to add Google Calendar integration to our bot. We hope that this bot can help with team collaboration during the upcoming school terms.",
+            "description" : "Because of COVID-19, both highschools and universities have fully for partially switched to online classes. This sparked the creation of SynergyyBot–<i>A Project Management Discord Bot Built for Students</i>. This bot includes meeting creation, RVSP, reminders, task creation, Google Calendar integration, and more. The bot was created using Discord’s python API, discord.py, as well as PostgreSQL to store data. The bot is also being hosted on Heroku, so that it can be used by many discord servers. Currently, there the bot is in over 70 different servers, with 500+ users! I hope that this bot can help with team collaboration during the upcoming school terms.",
             "used" : [
                 "Python 3",
                 "Discord.py",
-                "SQL and SQLite",
-                "AWS Hosting",
+                "PostgreSQL",
+                "Heroku",
                 "Many smaller python libraries"
             ],
             "github" : "https://github.com/SynergyyBot/SynergyyBot",
